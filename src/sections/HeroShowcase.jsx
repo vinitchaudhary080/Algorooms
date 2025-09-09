@@ -30,7 +30,7 @@ export default function HeroShowcase() {
             />
 
             {/* Soft bottom shadow */}
-            <div className="pointer-events-none absolute inset-x-0 -bottom-8 h-16 blur-2xl bg-black/5" />
+            {/* <div className="pointer-events-none absolute inset-x-0 -bottom-8 h-16 blur-2xl bg-black/5" /> */}
           </div>
         </div>
 
