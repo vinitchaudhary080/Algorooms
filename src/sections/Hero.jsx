@@ -4,7 +4,7 @@ import { Calendar, BarChart3, Layers, Layout } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative bg-white mt-0 sm:mt-20">
-      <div className="container-xxl  py-4 sm:py-20 text-center">
+      <div className="container-xxl  py-4 sm:pt-20 sm:pb-10 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 text-xs font-medium text-neutral-600 mb-6">
           <span className="px-2 py-0.5 rounded-full bg-green-100 text-green-700 font-semibold">NEW</span>
           Cryptomaty
@@ -16,7 +16,7 @@ export default function Hero() {
         <p className="mt-5 max-w-2xl mx-auto text-neutral-500">
           Unlock the potential of your business with our next-level SaaS platform. Transform your workflows and achieve new heights today.
         </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
+        <div className="mt-16 flex flex-wrap justify-center gap-8">
          <a
   href="#get-started"
   className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow hover:opacity-90 transition-opacity"
@@ -28,7 +28,7 @@ export default function Hero() {
             Know More →
           </a>
         </div>
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
+        <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
           <div className="flex flex-col items-start gap-3">
             <Calendar className="h-6 w-6 text-primary" />
             <h3 className="font-semibold text-neutral-900">Meaningful calendar</h3>
