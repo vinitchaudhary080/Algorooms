@@ -13,6 +13,9 @@
 
 
 /* Base styles */
+
+
+
 @layer base {
 html { scroll-behavior: smooth; }
 body { @apply bg-white text-neutral-100 antialiased; }
@@ -43,4 +46,20 @@ padding-inline: 1rem;
 /* smoothness ke liye */
 @utility will-change-transform {
   will-change: transform;
+}
+
+
+/* Smooth anchor scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sticky navbar ke neeche sahi anchor land karaane ke liye */
+.scroll-mt-nav {
+  scroll-margin-top: 88px; /* ~navbar height */
+}
+
+/* Motion safety for reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }

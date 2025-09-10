@@ -11,7 +11,7 @@ import templatesImg from "../assets/features/templates.png";
 
 export default function FeatureListing() {
   return (
-    <section id="feature-listing" className="py-20 sm:py-28 bg-[#F6F6F8]">
+    <section id="feature-listing" className="py-20 sm:py-28 bg-[#F6F6F8] scroll-mt-nav">
       <div className="container-xxl">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto">

@@ -35,7 +35,7 @@ const bullets = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-white py-20 sm:py-28">
+    <section id="how-it-works" className="bg-white py-20 sm:py-28 scroll-mt-nav">
       <div className="container-xxl">
         {/* Top row: badge + title + CTA */}
         <div className="grid items-start gap-6 md:grid-cols-[1fr_auto]">

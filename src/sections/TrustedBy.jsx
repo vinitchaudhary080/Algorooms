@@ -11,7 +11,7 @@ const logos = [springfield, orbitc, cloud, proline, amsterdam, luminous];
 
 export default function TrustedBy() {
   return (
-    <section className="relative bg-white py-12 overflow-hidden">
+    <section className="relative bg-white py-12 overflow-hidden scroll-mt-nav">
       <div className="container-xxl text-center">
         <p className="text-sm text-neutral-500 mb-8">
           Trusted by the world leaders

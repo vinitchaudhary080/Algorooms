@@ -4,7 +4,7 @@ import dashboardImg from "../assets/dashboard-hero.png"; // 👈 direct import
 
 export default function HeroShowcase() {
   return (
-    <section className="relative bg-white ">
+    <section className="relative bg-white scroll-mt-nav ">
       <div className="container-xxl">
         {/* Heading + badge row */}
       

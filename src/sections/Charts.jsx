@@ -4,7 +4,7 @@ import chartsImg from "../assets/charts.png"; // 👈 apna image path (assets fo
 
 export default function Charts() {
   return (
-    <section id="charts" className="relative bg-white py-20 sm:py-28">
+    <section id="charts" className="relative bg-white py-20 sm:py-28 scroll-mt-nav">
       <div className="container-xxl grid md:grid-cols-2 gap-12 items-center">
         {/* Left: Image */}
         <div className="relative order-1 md:order-none">

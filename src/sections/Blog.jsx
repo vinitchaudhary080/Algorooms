@@ -39,7 +39,7 @@ const posts = [
 
 export default function Blog() {
   return (
-    <section id="resources" className="bg-white py-20 sm:py-28">
+    <section id="resources" className="bg-white py-20 sm:py-28 scroll-mt-nav">
       <div className="container-xxl">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">

@@ -26,7 +26,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="relative bg-white py-20 sm:py-28">
+    <section id="features" className="relative bg-white py-20 sm:py-28 scroll-mt-nav">
       <div className="container-xxl">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto">

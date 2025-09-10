@@ -74,7 +74,7 @@ export default function VideoTestimonials() {
   }, []);
 
   return (
-    <section className="bg-white py-0">
+    <section className="bg-white py-0 scroll-mt-nav">
       <div className="container-xxl">
         {/* Heading (optional, you can keep or remove) */}
         {/* <div className="text-center max-w-3xl mx-auto">

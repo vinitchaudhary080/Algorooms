@@ -3,9 +3,9 @@ import { Calendar, BarChart3, Layers, Layout } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative bg-white mt-0 sm:mt-20">
+    <section className="relative bg-white mt-0 sm:mt-20 scroll-mt-nav">
       <div className="container-xxl  py-4 sm:pt-20 sm:pb-10 text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 text-xs font-medium text-neutral-600 mb-6">
+        <div className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-neutral-100 text-xs font-medium text-neutral-600 mb-6">
           <span className="px-2 py-0.5 rounded-full bg-green-100 text-green-700 font-semibold">NEW</span>
           Cryptomaty
         </div>
@@ -19,12 +19,12 @@ export default function Hero() {
         <div className="mt-16 flex flex-wrap justify-center gap-8">
          <a
   href="#get-started"
-  className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow hover:opacity-90 transition-opacity"
+  className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow hover:opacity-90 transition-opacity"
 >
   Get started →
 </a>
 
-          <a href="#learn-more" className="px-6 py-3 rounded-lg border border-neutral-300 text-neutral-700 hover:border-neutral-500 transition-colors">
+          <a href="#learn-more" className="px-6 py-3 rounded-xl border border-neutral-300 text-neutral-700 hover:border-neutral-400 hover:bg-neutral-50 transition-colors">
             Know More →
           </a>
         </div>

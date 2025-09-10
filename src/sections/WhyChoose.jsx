@@ -22,7 +22,7 @@ export default function WhyChoose() {
     const [active, setActive] = useState(TABS.length - 1);
 
     return (
-        <section id="why-choose" className="bg-white py-20 sm:py-28">
+        <section id="why-choose" className="bg-white py-20 sm:py-28 scroll-mt-nav">
             <div className="container-xxl">
                 {/* Heading */}
                 <div className="text-center max-w-3xl mx-auto">

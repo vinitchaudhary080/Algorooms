@@ -29,7 +29,7 @@ export default function FAQ() {
   const toggle = (i) => setOpen((v) => (v === i ? null : i));
 
   return (
-    <section id="faq" className="bg-white py-20 sm:py-28">
+    <section id="faq" className="bg-white py-20 sm:py-28 scroll-mt-nav">
       <div className="container-xxl">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto">

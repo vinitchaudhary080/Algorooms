@@ -1,19 +1,19 @@
 // src/components/Navbar.jsx
 import React, { useEffect, useState, useCallback } from "react";
 import { Menu, X, ChevronRight } from "lucide-react";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Features", href: "#features" },
-  { label: "Blogs", href: "#blogs" },
+  { label: "Home", to: "/", type: "route" },
+  { label: "About", to: "/about", type: "route" },
+  { label: "Features", href: "#features", type: "hash" },
+  { label: "Blogs", to: "/blog", type: "route" },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  // ESC to close + body scroll lock when drawer open
   const onKey = useCallback((e) => e.key === "Escape" && setOpen(false), []);
   useEffect(() => {
     document.addEventListener("keydown", onKey);
@@ -26,29 +26,36 @@ export default function Navbar() {
 
   const linkDesktop =
     "px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary";
-  const linkMobile =
-    "block w-full text-left px-1.5 py-3 text-[15px] font-medium text-neutral-800 hover:text-neutral-900";
+  const linkActive = "text-primary";
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container-xxl">
         <nav className="flex items-center justify-between py-4">
-          {/* Logo */}
-          <a href="/" className="flex items-center gap-2" aria-label="Cryptomaty Home">
-  <img src={logo} alt="Cryptomaty logo" className="h-8 w-auto shrink-0 select-none" decoding="async" />
-</a>
-
+          {/* Logo -> Home */}
+          <Link to="/" className="flex items-center gap-2" aria-label="Cryptomaty Home">
+            <img src={logo} alt="Cryptomaty logo" className="h-8 w-auto shrink-0 select-none" decoding="async" />
+          </Link>
 
           {/* Desktop nav */}
           <ul className="hidden md:flex items-center gap-6">
-            {navItems.map((it, i) => (
+            {navItems.map((it) => (
               <li key={it.label}>
-                <a
-                  href={it.href}
-                  className={`${linkDesktop} ${i === 0 ? "text-primary" : ""}`}
-                >
-                  {it.label}
-                </a>
+                {it.type === "route" ? (
+                  <NavLink
+                    to={it.to}
+                    end={it.to === "/"}
+                    className={({ isActive }) =>
+                      `${linkDesktop} ${isActive ? linkActive : ""}`
+                    }
+                  >
+                    {it.label}
+                  </NavLink>
+                ) : (
+                  <a href={it.href} className={linkDesktop}>
+                    {it.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -82,92 +89,95 @@ export default function Navbar() {
         </nav>
       </div>
 
-      {/* ===== Mobile Drawer (right slide, full white) ===== */}
+      {/* ===== Mobile Drawer ===== */}
       <div
-        className={`md:hidden fixed inset-0 z-[60] transition-[opacity] ${
-          open ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
+        className={`md:hidden fixed inset-0 z-[60] transition-[opacity] ${open ? "opacity-100" : "opacity-0 pointer-events-none"}`}
         aria-hidden={!open}
       >
         {/* Backdrop */}
-<div
-  className="absolute inset-0 bg-black/40"
-  onClick={() => setOpen(false)}   // 👈 backdrop click closes drawer
-/>
-
-{/* Close Button */}
-<button
-  onClick={() => setOpen(false)}
-  className="rounded-lg p-2 hover:bg-neutral-100"
-  aria-label="Close menu"
->
-  <X className="h-6 w-6 text-black" />   {/* 👈 force black color */}
-</button>
-
+        <div className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
 
         {/* Panel */}
-       <aside
-  id="mobile-drawer"
-  className={`absolute right-0 top-0 h-screen w-[86%] max-w-[360px]
-              translate-x-full bg-white z-[61] shadow-2xl ring-1 ring-black/5
-              transition-transform duration-300 ease-out
-              ${open ? "!translate-x-0" : ""}`}
-  role="dialog"
-  aria-modal="true"
->
-  {/* Full white flex wrapper */}
-  <div className="flex flex-col h-screen bg-white">
-    {/* Header */}
-   <div className="flex items-center justify-between px-4 py-4 border-b border-neutral-200">
-  <a href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-    <img src={logo} alt="Cryptomaty logo" className="h-7 w-auto" />
-  </a>
-  <button
-    onClick={() => setOpen(false)}
-    className="rounded-lg p-2 hover:bg-neutral-100"
-    aria-label="Close menu"
-  >
-    <X className="h-6 w-6 text-black" />  {/* now always black */}
-  </button>
-</div>
-
-    {/* Links + Buttons (scrollable) */}
-    <nav className="flex-1 overflow-y-auto px-4 py-3">
-      <ul className="divide-y divide-neutral-200">
-        {navItems.map((it) => (
-          <li key={it.label}>
-            <a
-              href={it.href}
-              className="block w-full text-left px-1.5 py-3 text-[15px] font-medium text-neutral-800 hover:text-neutral-900"
-              onClick={() => setOpen(false)}
-            >
-              {it.label}
-            </a>
-          </li>
-        ))}
-      </ul>
-
-      <div className="mt-6 grid gap-3">
-        <a
-          href="#contact"
-          className="inline-flex items-center justify-between rounded-2xl px-4 py-3 text-[15px] font-semibold text-neutral-800 border border-neutral-200 hover:border-neutral-300 bg-white"
-          onClick={() => setOpen(false)}
+        <aside
+          id="mobile-drawer"
+          className={`absolute right-0 top-0 h-screen w-[86%] max-w-[360px]
+                      translate-x-full bg-white z-[61] shadow-2xl ring-1 ring-black/5
+                      transition-transform duration-300 ease-out
+                      ${open ? "!translate-x-0" : ""}`}
+          role="dialog"
+          aria-modal="true"
         >
-          Contact us <ChevronRight className="h-4 w-4" />
-        </a>
-        <a
-          href="#get-started"
-          className="inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-[15px] font-semibold text-white
-                     bg-gradient-to-r from-[#0096FF] to-[#7B2FF7] hover:opacity-90 transition-opacity shadow"
-          onClick={() => setOpen(false)}
-        >
-          Get started <ChevronRight className="h-4 w-4" />
-        </a>
-      </div>
-    </nav>
-  </div>
-</aside>
+          <div className="flex flex-col h-screen bg-white">
+            {/* Top bar */}
+            <div className="flex items-center justify-between px-4 py-4 border-b border-neutral-200">
+              <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
+                <img src={logo} alt="Cryptomaty logo" className="h-7 w-auto" />
+              </Link>
+              <button
+                onClick={() => setOpen(false)}
+                className="rounded-lg p-2 hover:bg-neutral-100"
+                aria-label="Close menu"
+              >
+                <X className="h-6 w-6 text-black" />
+              </button>
+            </div>
 
+            {/* “Menu” heading + list */}
+            
+
+            <nav className="flex-1 overflow-y-auto px-2 py-2">
+              <ul className="mt-1">
+                {navItems.map((it) => (
+                  <li key={it.label}>
+                    {it.type === "route" ? (
+                      <NavLink
+                        to={it.to}
+                        end={it.to === "/"}
+                        onClick={() => setOpen(false)}
+                        className={({ isActive }) =>
+                          [
+                            "block rounded-lg px-4 py-4 text-[17px] font-medium tracking-tight",
+                            isActive
+                              ? "text-primary bg-neutral-50"
+                              : "text-neutral-800 hover:bg-neutral-50 hover:text-neutral-900",
+                          ].join(" ")
+                        }
+                      >
+                        {it.label}
+                      </NavLink>
+                    ) : (
+                      <a
+                        href={it.href}
+                        onClick={() => setOpen(false)}
+                        className="block rounded-lg px-4 py-4 text-[17px] font-medium tracking-tight text-neutral-800 hover:bg-neutral-50 hover:text-neutral-900"
+                      >
+                        {it.label}
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Buttons */}
+              <div className="mt-6 grid gap-3 px-3">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-between rounded-2xl px-4 py-3 text-[15px] font-semibold text-neutral-800 border border-neutral-200 hover:border-neutral-400 hover:bg-neutral-50 transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  Contact us <ChevronRight className="h-4 w-4" />
+                </a>
+                <a
+                  href="#get-started"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-[15px] font-semibold text-white bg-gradient-to-r from-[#0096FF] to-[#7B2FF7] hover:opacity-90 transition-opacity shadow"
+                  onClick={() => setOpen(false)}
+                >
+                  Get started <ChevronRight className="h-4 w-4" />
+                </a>
+              </div>
+            </nav>
+          </div>
+        </aside>
       </div>
     </header>
   );

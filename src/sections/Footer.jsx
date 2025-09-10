@@ -5,7 +5,7 @@ import gradientImg from "../assets/footer-gradient.png"; // 👈 jo tum provide 
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B0D17] text-neutral-300 relative py-14 sm:py-20">
+    <footer className="bg-[#0B0D17] text-neutral-300 relative py-14 sm:py-20 scroll-mt-nav">
       {/* Top CTA */}
       <div className="relative container-xxl">
         <div className="relative overflow-hidden rounded-3xl px-6 py-16 sm:px-12 sm:py-24 text-center text-white">

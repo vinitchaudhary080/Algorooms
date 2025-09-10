@@ -55,7 +55,7 @@ export default function Testimonials() {
   return (
   <section
   id="testimonials"
-  className="relative isolate py-20 sm:py-28 overflow-hidden" // 👈 add `isolate`
+  className="relative isolate py-20 sm:py-28 overflow-hidden scroll-mt-nav" // 👈 add `isolate`
   style={{ background: "linear-gradient(to bottom, #F6F6F8 0%, #FFFFFF 100%)" }}
 >
   {/* Bottom Fade Image */}

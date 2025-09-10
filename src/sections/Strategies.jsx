@@ -4,7 +4,7 @@ import strategiesImg from "../assets/strategies.png"; // 👈 apna image import 
 
 export default function Strategies() {
   return (
-    <section id="strategies" className="relative bg-white py-20 sm:py-28">
+    <section id="strategies" className="relative bg-white py-20 sm:py-28 scroll-mt-nav">
       <div className="container-xxl grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>

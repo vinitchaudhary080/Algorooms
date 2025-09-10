@@ -3,7 +3,7 @@ import brokerLogo from "../assets/broker-logo.png"; // 👈 apna broker logo yah
 
 export default function Broker() {
   return (
-    <section id="broker" className="bg-white py-20 sm:py-28">
+    <section id="broker" className="bg-white py-20 sm:py-28 scroll-mt-nav">
       <div className="container-xxl grid md:grid-cols-2 items-center gap-10">
         
         {/* Left Content */}
