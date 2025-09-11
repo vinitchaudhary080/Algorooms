@@ -10,7 +10,7 @@ const navItems = [
   // ⬇️ Features को route बना दिया
   { label: "Features", to: "/features", type: "route" },
   { label: "Blogs", to: "/blog", type: "route" },
-  { label: "Contact", to: "/contact", type: "route" }
+  // { label: "Contact", to: "/contact", type: "route" }
 ];
 
 export default function Navbar() {
