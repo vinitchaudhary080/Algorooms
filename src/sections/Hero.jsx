@@ -17,14 +17,15 @@ export default function Hero() {
           Unlock the potential of your business with our next-level SaaS platform. Transform your workflows and achieve new heights today.
         </p>
         <div className="mt-16 flex flex-wrap justify-center gap-8">
-         <a
-  href="#get-started"
+       <a
+  href="https://web.cryptomaty.com/login"
   className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow hover:opacity-90 transition-opacity"
 >
   Get started →
 </a>
 
-          <a href="#learn-more" className="px-6 py-3 rounded-xl border border-neutral-300 text-neutral-700 hover:border-neutral-400 hover:bg-neutral-50 transition-colors">
+
+          <a href="#features" className="px-6 py-3 rounded-xl border border-neutral-300 text-neutral-700 hover:border-neutral-400 hover:bg-neutral-50 transition-colors">
             Know More →
           </a>
         </div>

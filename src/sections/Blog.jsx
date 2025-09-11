@@ -4,6 +4,7 @@ import React from "react";
 import img1 from "../assets/blog/blog-1.png";
 import img2 from "../assets/blog/blog-2.png";
 import img3 from "../assets/blog/blog-3.png";
+import { Link } from "react-router-dom";
 
 const posts = [
   {
@@ -90,12 +91,12 @@ export default function Blog() {
 
         {/* Footer CTA */}
         <div className="mt-10 sm:mt-12 flex justify-center">
-          <a
-            href="#all-resources"
+          <Link
+            to="/blog"
             className="inline-flex items-center gap-2 rounded-xl border border-neutral-200 px-5 py-2.5 text-sm font-semibold text-neutral-800 hover:border-neutral-300 hover:bg-neutral-50 transition-colors"
           >
             Explore resources →
-          </a>
+          </Link>
         </div>
       </div>
     </section>

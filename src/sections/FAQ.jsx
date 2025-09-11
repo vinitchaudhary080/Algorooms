@@ -47,13 +47,16 @@ export default function FAQ() {
 
           <div className="mt-5">
             <a
-              href="#contact"
+              href="https://wa.me/917049850866"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold
-                         text-neutral-800 border border-neutral-200 hover:border-neutral-300 hover:bg-neutral-50
-                         transition-colors"
+             text-neutral-800 border border-neutral-200 hover:border-neutral-300 hover:bg-neutral-50
+             transition-colors"
             >
               Contact support →
             </a>
+
           </div>
         </div>
 

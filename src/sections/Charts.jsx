@@ -1,6 +1,7 @@
 // src/sections/Charts.jsx
 import React from "react";
-import chartsImg from "../assets/charts.png"; // 👈 apna image path (assets folder me)
+import chartsImg from "../assets/charts.png"; 
+import { Link } from "react-router-dom";
 
 export default function Charts() {
   return (
@@ -49,26 +50,27 @@ export default function Charts() {
           </p>
 
           <div className="mt-8">
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-[15px] font-medium text-neutral-800 hover:border-neutral-400 hover:bg-neutral-50 transition-colors"
-            >
-              Learn more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                className="h-4 w-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
+       <Link
+  to="/features"
+  className="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-[15px] font-medium text-neutral-800 hover:border-neutral-400 hover:bg-neutral-50 transition-colors"
+>
+  Learn more
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth="2"
+    stroke="currentColor"
+    className="h-4 w-4"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M9 5l7 7-7 7"
+    />
+  </svg>
+</Link>
+
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ export default function Broker() {
   return (
     <section id="broker" className="bg-white py-20 sm:py-28 scroll-mt-nav">
       <div className="container-xxl grid md:grid-cols-2 items-center gap-10">
-        
+
         {/* Left Content */}
         <div className="max-w-lg">
           <span className="inline-flex items-center gap-2 text-sm font-medium text-green-600">
@@ -22,14 +22,15 @@ export default function Broker() {
 
           <div className="mt-6">
             <a
-  href="#connect"
-  className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-[15px] font-semibold
+              href="https://web.cryptomaty.com/login"
+              className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-[15px] font-semibold
              text-neutral-800 border border-neutral-200 shadow-sm
              bg-transparent hover:bg-primary hover:text-white
              transition-colors duration-300 ease-in-out"
->
-  Connect Now →
-</a>
+            >
+              Connect Now →
+            </a>
+
 
           </div>
         </div>

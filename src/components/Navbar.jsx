@@ -7,8 +7,10 @@ import logo from "../assets/logo.svg";
 const navItems = [
   { label: "Home", to: "/", type: "route" },
   { label: "About", to: "/about", type: "route" },
-  { label: "Features", href: "#features", type: "hash" },
+  // ⬇️ Features को route बना दिया
+  { label: "Features", to: "/features", type: "route" },
   { label: "Blogs", to: "/blog", type: "route" },
+  { label: "Contact", to: "/contact", type: "route" }
 ];
 
 export default function Navbar() {
@@ -62,18 +64,21 @@ export default function Navbar() {
 
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-[15px] font-semibold text-neutral-800 border border-neutral-200 hover:border-neutral-300 shadow-[0_1px_0_0_rgba(0,0,0,0.04)]"
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-between rounded-2xl px-4 py-3 text-[15px] font-semibold text-neutral-800 border border-neutral-200 hover:border-neutral-400 hover:bg-neutral-50 transition-colors"
+              onClick={() => setOpen(false)}
             >
               Contact us <ChevronRight className="h-4 w-4" />
-            </a>
+            </Link>
             <a
-              href="#get-started"
+              href="https://web.cryptomaty.com/login"
               className="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-[15px] font-semibold text-white bg-neutral-900 hover:bg-neutral-800 shadow-lg"
             >
               Get started <ChevronRight className="h-4 w-4" />
             </a>
+
+
           </div>
 
           {/* Mobile menu button */}
@@ -122,9 +127,7 @@ export default function Navbar() {
               </button>
             </div>
 
-            {/* “Menu” heading + list */}
-            
-
+            {/* “Menu” list */}
             <nav className="flex-1 overflow-y-auto px-2 py-2">
               <ul className="mt-1">
                 {navItems.map((it) => (
@@ -160,20 +163,20 @@ export default function Navbar() {
 
               {/* Buttons */}
               <div className="mt-6 grid gap-3 px-3">
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center justify-between rounded-2xl px-4 py-3 text-[15px] font-semibold text-neutral-800 border border-neutral-200 hover:border-neutral-400 hover:bg-neutral-50 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   Contact us <ChevronRight className="h-4 w-4" />
-                </a>
+                </Link>
                 <a
-                  href="#get-started"
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-[15px] font-semibold text-white bg-gradient-to-r from-[#0096FF] to-[#7B2FF7] hover:opacity-90 transition-opacity shadow"
-                  onClick={() => setOpen(false)}
+                  href="https://web.cryptomaty.com/login"
+                  className="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-[15px] font-semibold text-white bg-neutral-900 hover:bg-neutral-800 shadow-lg"
                 >
                   Get started <ChevronRight className="h-4 w-4" />
                 </a>
+
               </div>
             </nav>
           </div>

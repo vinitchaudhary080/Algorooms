@@ -58,12 +58,15 @@ export default function HowItWorks() {
 
           <div className="md:pt-6">
             <a
-              href="#learn-more"
+              href="https://www.youtube.com/watch?v=pg8gz3usjE8&ab_channel=Cryptomaty"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-[15px] font-medium text-neutral-800 hover:border-neutral-400 hover:bg-neutral-50 transition-colors"
               aria-label="Learn more about how it works"
             >
               Learn more <ChevronRight className="h-4 w-4" />
             </a>
+
           </div>
         </div>
 

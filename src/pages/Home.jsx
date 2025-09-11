@@ -42,7 +42,7 @@ export default function Home() {
       />
       <Navbar />
       {/* Hero - light zoom/fade */}
-      <Reveal effect="zoom" duration={700}>
+      <Reveal effect="zoom" duration={200}>
         <Hero />
       </Reveal>
 
