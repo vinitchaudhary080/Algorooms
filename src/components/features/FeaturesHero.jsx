@@ -134,7 +134,7 @@ export default function FeaturesHero() {
 
             <a
               href="#"
-              className="mt-6 inline-flex items-center gap-2 rounded-xl px-5 py-3 text-[15px] font-semibold text-neutral-800 border border-neutral-200 hover:border-neutral-300 shadow-sm"
+              className="mt-6 inline-flex items-center gap-2 rounded-xl px-5 py-3 text-[15px] font-semibold text-neutral-800 border border-neutral-200 hover:border-neutral-300 "
             >
               {tab.cta} <span aria-hidden>→</span>
             </a>
