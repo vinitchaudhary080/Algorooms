@@ -13,11 +13,10 @@ export default function Broker() {
             Integrations
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-semibold text-neutral-900 leading-tight">
-            Integrates with <br className="hidden sm:block" /> your favorite <span className="text-black">Broker</span>
+            Seamlessly Integrates with <br className="hidden sm:block" /> Your Delta-Exchange  <span className="text-black">Broker</span>
           </h2>
           <p className="mt-4 text-neutral-500">
-            Enhance productivity, streamline processes, and keep everything
-            connected without disrupting.
+            Make trading easier, business more efficient, and without any failure or additional effort.
           </p>
 
           <div className="mt-6">

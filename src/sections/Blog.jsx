@@ -1,37 +1,36 @@
+// src/components/blog/Bloglisting.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 // 👉 apni images assets/blog/… me rakh lo (ya URLs use kar lo)
 import img1 from "../assets/blog/blog-1.png";
 import img2 from "../assets/blog/blog-2.png";
 import img3 from "../assets/blog/blog-3.png";
-import { Link } from "react-router-dom";
 
 const posts = [
   {
     id: 1,
-    href: "#",
-    category: "Stories",
-    title: "Code collaboration and best practices for seamless teamwork",
+    href: "/blog/what-is-crypto-trading",
+    category: "Crypto Trading",
+    title: "What is Crypto Trading? A Beginner’s Guide in Simple Words",
     date: "Jan 9, 2025",
     image: img1,
     alt: "A terracotta pot plant against soft orange wall",
   },
   {
     id: 2,
-    href: "#",
-    category: "Business",
-    title:
-      "Tips for optimizing your platform’s performance and speed",
+    href: "/blog/how-to-start-crypto-trading",
+    category: "Beginner's guide",
+    title: "How to Start Crypto Trading: A Simple Beginner’s Guide",
     date: "Jan 8, 2025",
     image: img2,
     alt: "A red cup on cyan background casting a soft shadow",
   },
   {
     id: 3,
-    href: "#",
+    href: "/blog/building-brand-loyalty-support",
     category: "Insights",
-    title:
-      "Building brand loyalty through exceptional customer support",
+    title: "Building brand loyalty through exceptional customer support",
     date: "Jan 7, 2025",
     image: img3,
     alt: "An orange bowl on warm background",
@@ -49,11 +48,10 @@ export default function Blog() {
             Resources
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900">
-            The latest insights
+            Resources & Insights
           </h2>
           <p className="mt-4 text-neutral-500">
-            Explore a curated collection of guides, tools, and insights
-            designed to help you get the most out of our products and services.
+            Find the right guides, trading solutions, and beyond all that you need in order to maximize the outcome and trade wiser with Cryptomaty.
           </p>
         </div>
 
@@ -61,7 +59,7 @@ export default function Blog() {
         <div className="mt-12 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((p) => (
             <article key={p.id} className="group">
-              <a href={p.href} className="block focus:outline-none">
+              <Link to={p.href} className="block focus:outline-none">
                 <div className="overflow-hidden rounded-2xl border border-neutral-200">
                   <img
                     src={p.image}
@@ -71,9 +69,7 @@ export default function Blog() {
                   />
                 </div>
                 <div className="mt-3">
-                  <span className="text-xs font-medium text-primary/90">
-                    {p.category}
-                  </span>
+                  <span className="text-xs font-medium text-primary/90">{p.category}</span>
                   <h3 className="mt-1 text-[17px] font-semibold leading-snug text-neutral-900 group-hover:underline">
                     {p.title}
                   </h3>
@@ -84,7 +80,7 @@ export default function Blog() {
                     {p.date}
                   </time>
                 </div>
-              </a>
+              </Link>
             </article>
           ))}
         </div>

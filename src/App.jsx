@@ -10,6 +10,7 @@ import FeaturesPage from "@/pages/Features";
 import Terms from "@/pages/Terms";
 import Privacy from "@/pages/Privacy";
 import ScrollToTop from "@/components/ScrollToTop";
+import StratCrypto from "@/pages/blog/StratCrypto";
 
 export default function App() {
   return (
@@ -24,6 +25,8 @@ export default function App() {
        <Route path="/features" element={<FeaturesPage />} />
        <Route path="/terms" element={<Terms />} />
        <Route path="/privacy" element={<Privacy />} />
+       <Route path="/blog/what-is-crypto-trading" element={<CodeDetail />} />
+      <Route path="/blog/how-to-start-crypto-trading" element={<StratCrypto />} />
        
     </Routes>
     </>

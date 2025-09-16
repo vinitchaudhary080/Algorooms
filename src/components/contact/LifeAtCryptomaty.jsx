@@ -29,11 +29,10 @@ export default function LifeAtCryptomaty() {
 
         {/* Title */}
         <h2 className="mt-3 text-3xl sm:text-5xl font-semibold tracking-tight text-neutral-900">
-          Meet the team behind the vision
+          Beyond Trading, Building Futures
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-neutral-600">
-          A glimpse into our daily culture — where creativity meets collaboration,
-          innovation thrives, and people love what they do.
+          A culture that is innovative, collaborative, and growth-oriented in which every idea counts.
         </p>
 
         {/* Image slider */}

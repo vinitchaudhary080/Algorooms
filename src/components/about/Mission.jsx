@@ -79,25 +79,18 @@ export default function Mission() {
             </span>
 
             <h2 className="mt-3 text-3xl sm:text-5xl font-semibold tracking-tight text-neutral-900">
-              Making software <br className="hidden sm:block" />
-              better for everyone
+              Empowering Traders,  <br className="hidden sm:block" />
+              Every Step of the Way
             </h2>
           </div>
 
           {/* Right: Copy */}
           <div className="text-neutral-600 leading-relaxed">
             <p>
-              What began as a vision to simplify business operations has grown
-              into a platform trusted by teams worldwide. From our humble
-              beginnings to becoming a leader in SaaS innovation, our journey
-              has been fueled by passion, collaboration, and a relentless drive
-              to make a difference.
+              We are aimed at making traders smarter by providing them with classier tools and ideas at Cryptomaty. We are set to make the crypto-trading process easier by integrating AI-based analytics, live market monitoring, and automated strategies into a singular and well-polished platform.
             </p>
             <p className="mt-4">
-              Our goal is to simplify complex processes, enabling businesses to
-              focus on what matters most—their goals and customers. By
-              delivering powerful yet user-friendly software solutions, we’re
-              redefining productivity and innovation for teams of all sizes.
+             In our opinion, trading is supposed to be effective, transparent, and available. With a single dashboard and simple features, we can assist all traders to make informed choices depending on the data and develop steadily.
             </p>
           </div>
         </div>
@@ -108,9 +101,9 @@ export default function Mission() {
         {/* Stats */}
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8">
           <Stat label="Year founded" from={1000} to={2010} duration={1400} start={startCount} />
-          <Stat label="Total funding" from={0} to={30}   duration={1400} suffix="M" start={startCount} />
-          <Stat label="Team members"  from={0} to={15}   duration={1400} suffix="+" start={startCount} />
-          <Stat label="Companies"     from={0} to={25}   duration={1400} suffix="K" start={startCount} />
+          <Stat label="Strategies Used by Traders" from={0} to={10}   duration={1400} suffix="K+" start={startCount} />
+          <Stat label="Faster backtesting and reporting"  from={0} to={95}   duration={1400} suffix="%" start={startCount} />
+          <Stat label="support to keep you tradin"     from={0} to={24}   duration={1400} suffix="/7" start={startCount} />
         </div>
       </div>
     </section>

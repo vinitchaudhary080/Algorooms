@@ -2,24 +2,24 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    q: "Is my data safe with your platform?",
-    a: "Yes. We follow industry best practices: encryption in transit and at rest, role-based access controls, and regular security reviews to keep your data protected.",
+    q: "So what is to be done with this dashboard?",
+    a: "Analyze markets, create and implement plans, back test concepts, as well as monitor live P&L  without leaving the building.",
   },
   {
-    q: "What kind of customer support do you offer?",
-    a: "Email support for all plans, with priority SLAs on paid tiers. We also provide product guides, tutorials, and onboarding assistance.",
+    q: "Would it be necessary to have code formulations to create strategies?",
+    a: "No coding is needed. Simply click on prerecorded templates or use our easy drag-and-drop tool.",
   },
   {
-    q: "How does the pricing for your web solution work?",
-    a: "Transparent monthly plans with usage-based add-ons. You can upgrade or downgrade anytime—no hidden fees.",
+    q: "Can I link my broker account?",
+    a: "Yes, safely integrate your broker account through API to be up-to-date.",
   },
   {
-    q: "Can I cancel my subscription at any time?",
-    a: "Absolutely. You can cancel from your account settings; your plan remains active until the end of the billing period.",
+    q: "Is my data secure?",
+    a: "Absolutely, our bank-grade encryption is used and does not share your data with third parties.",
   },
   {
-    q: "Can I upgrade or downgrade my subscription plan?",
-    a: "Yes. Plan changes take effect immediately and are prorated according to your remaining cycle.",
+    q: "What support do you offer?",
+    a: "We have 24/7 customer care services through chat support, email, and knowledge base services.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function FAQ() {
             missed anything
           </h2>
           <p className="mt-3 text-neutral-500">
-            We’re here to answer all your questions.
+            Get fast answers to the most popular inquiries of Cryptomaty, setting up Cryptomaty to strategy, we should know.
           </p>
 
           <div className="mt-5">

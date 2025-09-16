@@ -20,9 +20,9 @@ export default function FeaturesPage() {
       </Reveal>
 
       {/* Listed / Mosaic – slide up */}
-      <Reveal effect="fade-up" duration={650}>
+      {/* <Reveal effect="fade-up" duration={650}>
         <FeaturesShowcase />
-      </Reveal>
+      </Reveal> */}
 
       {/* How it works – fade-up */}
       <Reveal effect="fade-up" duration={650}>

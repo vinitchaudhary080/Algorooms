@@ -14,7 +14,7 @@ export default function Hero() {
           For <span className="text-primary">faster & smarter</span> trades.
         </h1>
         <p className="mt-5 max-w-2xl mx-auto text-neutral-500">
-          Unlock the potential of your business with our next-level SaaS platform. Transform your workflows and achieve new heights today.
+          Bring the crypto power out with our progressive SaaS model. Make your trading easier and achieve even greater heights now.
         </p>
         <div className="mt-16 flex flex-wrap justify-center gap-8">
        <a
@@ -32,23 +32,23 @@ export default function Hero() {
         <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
           <div className="flex flex-col items-start gap-3">
             <Calendar className="h-6 w-6 text-primary" />
-            <h3 className="font-semibold text-neutral-900">Meaningful calendar</h3>
-            <p className="text-sm text-neutral-500">Create, modify, and share events with ease.</p>
+            <h3 className="font-semibold text-neutral-900">Strategy Templates</h3>
+            <p className="text-sm text-neutral-500">Access trading strategies pre-built by trading experts.</p>
           </div>
           <div className="flex flex-col items-start gap-3">
             <BarChart3 className="h-6 w-6 text-primary" />
-            <h3 className="font-semibold text-neutral-900">Insightful analytics</h3>
-            <p className="text-sm text-neutral-500">Track key performance indicators, generate reports.</p>
+            <h3 className="font-semibold text-neutral-900">Backtest</h3>
+            <p className="text-sm text-neutral-500">Test your ideas with historical data prior to going live.</p>
           </div>
           <div className="flex flex-col items-start gap-3">
             <Layers className="h-6 w-6 text-primary" />
-            <h3 className="font-semibold text-neutral-900">Seamless integration</h3>
-            <p className="text-sm text-neutral-500">Keep everything connected without any limits.</p>
+            <h3 className="font-semibold text-neutral-900">Deployed Strategy</h3>
+            <p className="text-sm text-neutral-500">Easily deploy strategies and set automation to work for you.</p>
           </div>
           <div className="flex flex-col items-start gap-3">
             <Layout className="h-6 w-6 text-primary" />
-            <h3 className="font-semibold text-neutral-900">Effortless boards</h3>
-            <p className="text-sm text-neutral-500">Visual way to organize and track your tasks and projects.</p>
+            <h3 className="font-semibold text-neutral-900">Track P&L</h3>
+            <p className="text-sm text-neutral-500">Track real-time profits and losses directly on your dashboard.</p>
           </div>
         </div>
       </div>

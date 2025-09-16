@@ -18,11 +18,10 @@ export default function Footer() {
           />
           <div className="relative">
             <h2 className="text-3xl sm:text-4xl font-semibold">
-              Start your trial today.
+              Your Smarter Trading Journey Begins Here
             </h2>
             <p className="mt-3 max-w-2xl mx-auto text-neutral-200">
-              Unlock the potential of your business with our next-level SaaS platform.
-              Transform your workflows and achieve new heights today.
+              Let AI-backed strategies, real-time intelligence, and uninterrupted broker tracking reside using the same dashboard.
             </p>
             <div className="mt-6">
               <a

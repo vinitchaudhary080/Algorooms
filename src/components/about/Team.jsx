@@ -32,11 +32,10 @@ export default function Team() {
             Our team
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900">
-            Meet the team
+            Meet the Minds Behind Cryptomaty
           </h2>
           <p className="mt-4 text-neutral-500">
-            Behind every great solution is a team of passionate innovators,
-            problem-solvers, and visionaries.
+             A team of traders, creators, and innovators of different kinds is bound and determined to make crypto trading simpler and smarter.
           </p>
         </div>
 

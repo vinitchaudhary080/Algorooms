@@ -8,18 +8,18 @@ import feature3 from "../assets/feature-3.png"; // Track Profits image
 
 const features = [
   {
-    title: "Deploy Your Custom Strategies",
-    desc: "Share, edit, and manage projects in real-time, ensuring everyone stays aligned and productive.",
+    title: "Deploy Custom Strategies:",
+    desc: "Build/test/automate with no-code.",
     img: feature1,
   },
   {
     title: "Smart Coin Sentiment Detection",
-    desc: "Share, edit, and manage projects in real-time, ensuring everyone stays aligned and productive.",
+    desc: "AI sorts the coins that become bullish/bears.",
     img: feature2,
   },
   {
-    title: "Track Profits & Strategy ROI",
-    desc: "Share, edit, and manage projects in real-time, ensuring everyone stays aligned and productive.",
+    title: "Track Profits and Strategy ROI",
+    desc: "Real-time P&L and flat by broker.",
     img: feature3,
   },
 ];
@@ -35,11 +35,10 @@ export default function Features() {
             Features
           </span>
           <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900">
-            Everything You Need to Trade Smarter. In One Place.
+            Everything For More Intelligent Trading. In One Powerful Dashboard.
           </h2>
           <p className="mt-4 text-neutral-500">
-            Say goodbye to version chaos and embrace a smoother workflow
-            designed to help your team achieve more, together.
+            Forget the confusion and move into a progressive working process that has been established among you to trade more rapidly & intelligently.
           </p>
         </div>
 

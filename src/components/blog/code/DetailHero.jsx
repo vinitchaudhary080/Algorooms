@@ -3,16 +3,16 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 // Safe defaults
-import coverImg from "@/assets/blog/sample-post.png";
+import coverImg from "@/assets/blog/blog-1.png";
 // NOTE: Agar tumhare paas avatar file nahi hai to is import ko hata do
 // import authorAvatar from "@/assets/avatars/john.png";
 
 export default function CodeDetailHero({
   backTo = "/blog",
   category = "News",
-  title = "Why design simplicity can improve User Experience",
-  excerpt = "Simplified design fosters usability, improves accessibility, and increases overall user satisfaction by ensuring smooth and efficient interactions.",
-  date = "Jan 10, 2025",
+  title = "What is Crypto Trading? A Beginner’s Guide in Simple Words",
+  excerpt = "If you’ve been scrolling through social media lately, chances are you’ve seen people talking about Bitcoin, Ethereum, or some “new coin” that’s about to explode. That’s all part of the world of crypto trading.",
+  date = "Sep 16, 2025",
   author = { name: "John Parker", role: "Customer Success" },
   hero = coverImg,
   avatar = null, // 👈 pass an image path if you have one

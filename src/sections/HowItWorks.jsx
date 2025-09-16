@@ -8,28 +8,29 @@ import {
   ChevronRight,
   Zap,
 } from "lucide-react";
-import howImg from "../assets/how-dashboard.png"; // 👈 apni provided image
+// import howImg from "../assets/how-dashboard.png"; // ❌ remove old image
+import howVideo from "../assets/how-to-use.webm"; // ✅ new video
 
 const bullets = [
   {
-    icon: CalendarCheck2,
-    title: "Meaningful calendar",
-    desc: "Create, modify, and share events with ease.",
+    icon: LinkIcon,
+    title: "Connect Your Broker",
+    desc: "Link exchange APIs are securely connected.",
   },
   {
     icon: BarChart2,
-    title: "Insightful analytics",
-    desc: "Track key performance indicators, generate reports.",
+    title: "Scan with AI Screener",
+    desc: "Identify bullish/bearish coins immediately.",
   },
   {
-    icon: LinkIcon,
-    title: "Seamless integration",
-    desc: "Keep everything connected without any limits.",
+    icon: CalendarCheck2,
+    title: "Deploy Strategy",
+    desc: "Select or build templates.",
   },
   {
     icon: LayoutPanelTop,
-    title: "Effortless boards",
-    desc: "Organize & track your tasks and projects visually.",
+    title: "Track & Optimise",
+    desc: "Operate ROI, P&L, and at any time.",
   },
 ];
 
@@ -46,13 +47,12 @@ export default function HowItWorks() {
             </span>
 
             <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900">
-              Everything you need to <br className="hidden sm:block" />
-              grow, in one place
+              All You Need to <br className="hidden sm:block" />
+              Grow, All in One Place
             </h2>
 
             <p className="mt-4 max-w-xl text-neutral-500">
-              Our platform is designed with simplicity in mind, ensuring that
-              even the least tech-savvy users can navigate effortlessly.
+              Our platform was constructed with convenience and simplicity in mind. Growth is easy and sufficient enough that even a beginner can navigate the platform with complete confidence.
             </p>
           </div>
 
@@ -66,23 +66,23 @@ export default function HowItWorks() {
             >
               Learn more <ChevronRight className="h-4 w-4" />
             </a>
-
           </div>
         </div>
 
-        {/* Tilted screenshot card */}
-        <div className="">
+        {/* Tilted screenshot card (replaced with video) */}
+        <div className="mt-10">
           <div className="relative mx-auto max-w-8xl">
             {/* soft background plate */}
             <div className="absolute " />
-            {/* image frame */}
-            <div className="relative ">
-              <img
-                src={howImg}
-                alt="Cryptomaty dashboard overview"
+            {/* video frame */}
+            <div className="relative overflow-hidden rounded-xl">
+              <video
+                src={howVideo}
                 className="block w-full h-auto"
-                loading="lazy"
-                decoding="async"
+                autoPlay
+                muted
+                loop
+                playsInline
               />
             </div>
             {/* bottom glow */}

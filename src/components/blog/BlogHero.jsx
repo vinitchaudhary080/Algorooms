@@ -14,17 +14,17 @@ export default function BlogHero() {
             <span className="inline-flex h-5 w-5 items-center justify-center rounded-full ring-1 ring-green-600/30 bg-white">
               <NotebookPen className="h-3.5 w-3.5 text-green-600" />
             </span>
-            Blog
+             Blog & Insights
           </span>
 
           {/* Title */}
           <h1 className="mt-4 text-[44px] sm:text-6xl font-semibold tracking-tight text-neutral-900">
-            Blog
+            Stay Ahead of the Market
           </h1>
 
           {/* Subtext */}
           <p className="mt-4 text-base sm:text-lg text-neutral-500">
-            Lorem ipsum dolor sit amet consectetur.
+            Explore expert tips, market trends, and trading strategies - delivered to help you trade smarter each and every day.
           </p>
         </div>
       </div>

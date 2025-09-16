@@ -14,11 +14,7 @@ export default function Founder() {
 
             <div className="mt-5 space-y-4 text-neutral-600 leading-relaxed">
               <p>
-                When I started this journey, my vision was simple. I wanted to
-                create something that brings value, fosters connection, and
-                makes a meaningful impact. Every step we’ve taken has been
-                guided by a passion for innovation and a commitment to putting
-                people first.
+              The sole purpose behind this platform we had built at Cryptomaty actually was to make the process of crypto trading easier (not more complex) for anyone. Our team is committed to creating software that removes complexity, needs time-saving tools, and allows traders to make decisions confidently.
               </p>
               <p>
                 This is not just a brand. It is a community, a space where ideas
@@ -28,20 +24,19 @@ export default function Founder() {
                 part of this story.
               </p>
               <p>
-                Together, we are building something truly special, and I can’t
-                wait to see what the future holds.
+                We are always evolving, improving, and listening to our community to make sure that Cryptomaty is developed in accordance with the changing needs of traders. It is good to see you here on this trade voyage, and you, in company, may expect a still higher success.
               </p>
             </div>
 
             {/* Signature row */}
             <div className="mt-8 flex items-center justify-between max-w-sm">
               <div>
-                <div className="text-sm font-semibold text-neutral-900">Ray Mort</div>
+                <div className="text-sm font-semibold text-neutral-900">Reyansh Upadhyay</div>
                 <div className="text-xs text-neutral-500">Founder</div>
               </div>
               {/* Signature (optional image can be swapped later) */}
               <div className="text-2xl font-[600] italic text-neutral-900 select-none">
-                Ray&nbsp;Mort.
+                Reyansh&nbsp;Upadhyay.
               </div>
             </div>
           </div>

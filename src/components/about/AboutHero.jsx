@@ -20,13 +20,12 @@ export default function AboutHero() {
           </span>
 
           <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-neutral-900">
-            Lorem ipsum dolor sit <br className="hidden sm:block" />
-            amet consectetur.
+            The Future of  <br className="hidden sm:block" />
+            Crypto Trading.
           </h1>
 
           <p className="mt-4 text-neutral-500">
-            Our mission is to bridge the gap between complexity and efficiency,
-            ensuring every organization can thrive in a digital-first world.
+            Trader-friendly and trusted by thousands, our mission is to make trading in crypto as simple as it should be, using AI-powered trading tools, automation, and a single dashboard to trade smarter each day.
           </p>
         </div>
 

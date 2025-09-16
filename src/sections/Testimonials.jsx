@@ -5,49 +5,49 @@ import fadeImg from "../assets/Fade.png"; // 👈 bottom fade image
 
 const items = [
   {
-    text: "Using this product has been such a smooth experience. The clean UI & a lot of thought went into making it user-friendly.",
-    name: "Diana Musker",
-    role: "Head of Product, Cloud",
+    text: "The AI screener is something that saves lives. “I would be able to identify bullish coins within minutes of time and make trades confidently. It saves me hours every day.",
+    name: "Amit Verma",
+    role: "Swing Trader",
   },
   {
-    text: "I didn’t realize how much I needed this product until I started using it. It’s reliable and easy to use.",
-    name: "Paul Smith",
-    role: "Creative Director, Luminous",
+    text: "Backtesting provided me with clarity. “I was able to test my strategy and then viewed the results, and even did it live with no fear. It's like having a safety net.",
+    name: "Priya Nair",
+    role: "Day Trader",
   },
   {
-    text: "This product does everything I hoped for and more. The design is so intuitive, and it fits seamlessly into my routine.",
-    name: "Tim Williams",
-    role: "Founder, Orbitc",
+    text: "There is everything inside a single dashboard: charts, strategies, and broker P&L. Trading is easier and effective at this point.",
+    name: "Rahul Mehta",
+    role: "Options Trader",
   },
   {
-    text: "I’ve tried countless products; nothing comes close. The design is incredibly user-friendly.",
-    name: "James Anderson",
-    role: "Founder, Aura",
+    text: "I have feared a complex application, but Cryptomaty is top of the world easy to use. There is no coding, no confusion, just smart trading tools that make it happen.",
+    name: "Neha Sharma",
+    role: "Crypto Enthusiast",
   },
   {
-    text: "Simple yet powerful. This has become essential for me.",
-    name: "David Mitchell",
-    role: "VP of Sales, Proline",
+    text: "From sentiment detection to live P&L, Cryptomaty has got it all. I don't have to take a lot of different tools and pieces with me every time they're in one of the clean dashboards.",
+    name: "Karan Patel:",
+    role: "Professional Trader",
   },
   {
-    text: "Genuinely impressed with how well this works. Integrates into my routine seamlessly.",
-    name: "Benjamin Meier",
-    role: "Product Manager, Hamilton",
+    text: "As a beginner, I was apprehensive about dealing with crypto trading. But Cryptomaty's AI tools made me believe.'This is How I Started Small, And The Results Speak For Themselves'.",
+    name: "Ananya Joshi",
+    role: "New Trader",
   },
   {
-    text: "So easy to set up. Minimal UI, intuitive UX, performs beautifully.",
-    name: "Natalie Brooks",
-    role: "Co-founder, Anecdocs",
+    text: "The ability to use live charts and track returns on strategy is invaluable. I time myself better, monitor my performance, trade smarter, every single day.",
+    name: "Vikram Sing",
+    role: "Day traders / Swing Trader",
   },
   {
-    text: "Exactly what I was looking for. Reliable and beautifully designed.",
-    name: "Ishaan Patel",
-    role: "Design Lead, Aeron",
+    text: "'Integrating my broker account was very seamless.' My P&L updates in real time, which saves me hours every week and allows me to discuss strategy.",
+    name: "Rohit Desai",
+    role: "Algorithmic Trader",
   },
   {
-    text: "Exceeded expectations. Made my life easier in ways I didn’t expect.",
-    name: "John Parker",
-    role: "Marketing Director, Menlia",
+    text: "I launched my first strategy in a matter of minutes without doing any coding.The templates and automation work perfectly; it doesn't seem like trading finally runs on autopilot.",
+    name: "Sneha Kulkarni",
+    role: " Investor and Part-Time Trader",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function Testimonials() {
             Traders Worldwide
           </h2>
           <p className="mt-4 text-neutral-500">
-            Find out why our solution is the top choice for fast-growing startups.
+            Thousands of traders in India, who are amateurs and professional users, have confided in Cryptomaty to make trading easy and get more profits.
           </p>
         </div>
 

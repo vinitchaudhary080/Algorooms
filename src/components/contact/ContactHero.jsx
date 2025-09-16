@@ -16,22 +16,25 @@ export default function ContactHero() {
                         Let’s get in touch
                     </h1>
                     <p className="mt-4 text-neutral-600 leading-relaxed max-w-lg">
-                        Have questions, feedback, or want to collaborate?
-                        Fill out the form and our team will get back to you shortly.
+                       We're here to help. Contact our team in case of any doubts, helping, or comments, and we are going to respond to you as soon as possible.
                     </p>
 
                     <ul className="mt-6 space-y-3 text-neutral-700">
                         <li className="flex items-start gap-2">
                             <span className="text-green-600 mt-1">✓</span>
-                            Quick response from our support team
+                            Reach our team anytime - questions, support, or feedback.
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="text-green-600 mt-1">✓</span>
-                            Get help with your queries and ideas
+                            Contact us by email, phone, or live chat, and we'll get right back to you.
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="text-green-600 mt-1">✓</span>
-                            Reliable assistance for all your needs
+                            Your insight helps us to get better and serve you better.
+                        </li>
+                         <li className="flex items-start gap-2">
+                            <span className="text-green-600 mt-1">✓</span>
+                            Our mission is to make your journey of trading smarter and easier.
                         </li>
                     </ul>
 

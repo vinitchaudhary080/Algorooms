@@ -12,137 +12,91 @@ export default function CodeDetailContent() {
         <article className="mx-auto max-w-3xl text-[15px] leading-7 text-neutral-700">
           {/* Intro */}
           <p className="text-neutral-700">
-            In the realm of digital design, simplicity has emerged as a cornerstone of
-            effective user experience (UX). As our lives grow increasingly saturated with
-            technology, users crave interfaces that are intuitive, efficient, and
-            aesthetically pleasing. Design simplicity is not just a stylistic choice; it is a
-            strategic approach to creating experiences that resonate with users and achieve{" "}
-            <span className="font-semibold text-neutral-900">business goals</span>.
+            But what exactly is <span className="font-semibold text-neutral-900">crypto trading</span>, and why is everyone so hyped about it?
+            Let’s keep it simple.
           </p>
 
           {/* H2 */}
           <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
-            Faster Performance
+            What Does Crypto Trading Mean?
           </h2>
           <p className="mt-2">
-            Complex designs with heavy graphics, animations, or excessive features can slow
-            down performance, particularly on mobile devices or areas with limited bandwidth.
-            Simplicity optimizes performance by reducing the number of elements a system
-            needs to load, ensuring a smoother and more responsive user experience.
+            Crypto trading is basically buying and selling digital money (cryptocurrency) to make a profit.
+            Think of it like buying gold or stocks—you buy when the price is low and sell when it goes up. The big difference is:
+          </p>
+          <ul className="mt-3 space-y-2 list-disc pl-5">
+            <li>The crypto market never sleeps. It runs 24/7.</li>
+            <li>Prices can move up or down very quickly (sometimes within minutes).</li>
+          </ul>
+          <p className="mt-3">
+            That’s why people say crypto trading is exciting but also risky.
           </p>
 
           <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
-            Improved Accessibility
+             How Do You Actually Trade Crypto?
           </h2>
-          <p className="mt-2">
-            Simple designs are often more accessible to users with diverse needs. For
-            individuals with visual impairments, cognitive challenges, or motor
-            difficulties, a clutter-free interface with clear labels, large buttons, and
-            sufficient contrast can make all the difference. Simplicity ensures inclusivity,
-            enabling a broader audience to benefit from the product.
+          <ol className="mt-3 space-y-2 list-decimal pl-5">
+            <li>Sign up on a crypto exchange (like DeltaExchange, CoinDCX, Binance etc.).</li>
+            <li>Add money (can be INR, USD, or another crypto).</li>
+            <li>Pick a coin (Bitcoin, Ethereum, or any other).</li>
+            <li>Buy it and wait for the price to move.</li>
+            <li>Sell it when you’re happy with the profit (or need to cut losses).</li>
+          </ol>
+          <p className="mt-3">
+            It’s really that simple at the start—but learning the right timing is the tricky part.
           </p>
 
-          {/* List */}
-          <h3 className="mt-8 text-[16px] font-semibold text-neutral-900">
-            List of Benefits
-          </h3>
-          <ul className="mt-3 space-y-2">
-            {[
-              {
-                t: "Increased Clarity:",
-                d: "A simple design helps users quickly understand what the product or service does, reducing confusion and enhancing their ability to navigate.",
-              },
-              {
-                t: "Improved Usability:",
-                d: "By minimizing unnecessary features, users can easily find what they need without distraction, leading to more efficient interaction.",
-              },
-              {
-                t: "Faster Learning Curve:",
-                d: "Simplicity makes it easier for new users to get up to speed, as they don’t have to spend time deciphering complex elements.",
-              },
-            ].map((item, i) => (
-              <li key={i} className="relative pl-5">
-                <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-neutral-400" />
-                <span className="font-semibold text-neutral-900">{item.t}</span>{" "}
-                <span>{item.d}</span>
-              </li>
-            ))}
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
+            Why Do People Love Crypto Trading?
+          </h2>
+          <ul className="mt-3 space-y-2 list-disc pl-5">
+            <li>It can give big profits (but also big losses).</li>
+            <li>The market is open 24/7.</li>
+            <li>You can start small—even ₹100 is enough.</li>
+            <li>Anyone with internet can trade, no matter where they are.</li>
           </ul>
 
-          {/* Paragraph */}
-          <p className="mt-3">
-            For new users, a complex design can feel like an insurmountable challenge.
-            Simplicity reduces the learning curve by making interfaces predictable and
-            familiar. By adhering to established design conventions—such as standard
-            button placements and intuitive gestures—designers help users quickly understand
-            how to navigate and use a product.
-          </p>
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
+          The Flip Side: Risks You Should Know
+          </h2>
+          <ul className="mt-3 space-y-2 list-disc pl-5">
+            <li><span className="font-semibold text-neutral-900">Volatility:</span> Coins can crash in minutes.</li>
+            <li><span className="font-semibold text-neutral-900">Scams &amp; hacks:</span> Fake coins and phishing links are common.</li>
+            <li><span className="font-semibold text-neutral-900">No safety net:</span> Unlike banks, there’s no one to “rescue” you.</li>
+            <li><span className="font-semibold text-neutral-900">Emotions:</span> Fear and greed can mess up decisions.</li>
+          </ul>
 
-          {/* Quote card */}
-          <figure className="mt-8 rounded-xl border border-neutral-200 bg-neutral-50 p-5">
+          {/* Note card */}
+          <figure className="mt-6 rounded-xl border border-neutral-200 bg-neutral-50 p-5">
             <blockquote className="italic text-neutral-800">
-              “Accessibility is not a feature, it’s a social trend.”
+              👉 <span className="font-semibold">NOTE:</span> Only invest money you’re okay with losing.
             </blockquote>
-            <figcaption className="mt-2 text-sm text-neutral-500">
-              – Antonio Santos
-            </figcaption>
           </figure>
 
-          {/* Dev perspective */}
-          <p className="mt-8">
-            From a development perspective, simple designs are easier to maintain and scale.
-            Minimalistic interfaces often require fewer resources to update, debug, or expand.
-            This efficiency translates to faster development cycles and reduced costs,
-            benefiting both users and stakeholders.
-          </p>
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
+            Quick Tips for Beginners
+          </h2>
+          <ul className="mt-3 space-y-2 list-disc pl-5">
+            <li>Start small, don’t go all-in.</li>
+            <li>Stick to trusted exchanges and wallets.</li>
+            <li>Don’t fall for “get rich quick” hype.</li>
+            <li>Follow news and learn daily.</li>
+            <li>Spread your money—don’t bet everything on one coin.</li>
+          </ul>
 
           {/* Conclusion */}
           <h3 className="mt-8 text-[16px] font-semibold text-neutral-900">
-            Conclusion
+            Final Thoughts
           </h3>
           <p className="mt-2">
-            Simplicity in design is not about stripping away features or oversimplifying
-            functionality; it’s about creating clarity and removing unnecessary complexity.
-            By prioritizing cognitive ease, usability, accessibility, and aesthetic appeal,
-            simple designs foster positive user experiences that drive engagement and
-            satisfaction. In an increasingly competitive digital landscape, embracing
-            simplicity is not just a design trend—it’s a necessity for creating products
-            that truly resonate with users.
+            Crypto trading isn’t magic, and it’s definitely not a shortcut to instant riches.
+            But if you take time to learn, stay patient, and don’t gamble with money you can’t afford to lose,
+            it can be a really exciting journey. At the end of the day, trading is less about luck and more about
+            discipline and smart choices.
           </p>
 
-          {/* Footer: author + share */}
-          <div className="mt-10 flex items-center justify-between gap-4 border-t border-neutral-200 pt-6">
-            <div className="flex items-center gap-3">
-              <div className="h-9 w-9 overflow-hidden rounded-full bg-neutral-200">
-                <img
-                  src={authorAvatar}
-                  alt="John Parker"
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <div className="text-sm font-semibold text-neutral-900">John Parker</div>
-                <div className="text-xs text-neutral-500">Customer Success</div>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 text-neutral-500">
-              <span className="text-xs">Share</span>
-              <a href="#" aria-label="Share on X" className="hover:text-neutral-800">
-                <Twitter className="h-4 w-4" />
-              </a>
-              <a href="#" aria-label="Share on Facebook" className="hover:text-neutral-800">
-                <Facebook className="h-4 w-4" />
-              </a>
-              <a href="#" aria-label="Share on LinkedIn" className="hover:text-neutral-800">
-                <Linkedin className="h-4 w-4" />
-              </a>
-              <button aria-label="Copy link" className="hover:text-neutral-800">
-                <LinkIcon className="h-4 w-4" />
-              </button>
-            </div>
-          </div>
+          
+          
         </article>
       </div>
     </section>

@@ -116,7 +116,7 @@ export default function Navbar() {
             {/* Top bar */}
             <div className="flex items-center justify-between px-4 py-4 border-b border-neutral-200">
               <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-                <img src={logo} alt="Cryptomaty logo" className="h-7 w-auto" />
+                {/* <img src={logo} alt="Cryptomaty logo" className="h-7 w-auto" /> */}
               </Link>
               <button
                 onClick={() => setOpen(false)}
