@@ -20,12 +20,11 @@ export default function FeatureListing() {
             Features
           </span>
           <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900">
-            Features designed to <br className="hidden sm:block" />
-            empower your workflow
+            Trade Smarter.  <br className="hidden sm:block" />
+            Track Better. Grow Faster.
           </h2>
           <p className="mt-4 text-neutral-500">
-            Stay ahead with tools that prioritize your needs, integrating insights
-            and efficiency into one powerful platform.
+            Backtesting through live PNL monitoring finds out why 19 K+ users trust Cryptomaty with one-second strategy execution and trading experience.
           </p>
         </div>
 
@@ -51,9 +50,8 @@ export default function FeatureListing() {
                   Backtest strategy insights
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-neutral-500">
-                  Make smarter, more informed decisions with powerful and actionable data
-                  insights, designed to empower your business with the tools needed to drive
-                  growth, efficiency, and success.
+                  Test before you trade. Test strong backtests with past data to find out what profits and spot risks there were, and fine-tune your strategy with no fear.
+
                 </p>
               </div>
             </div>
@@ -71,7 +69,7 @@ export default function FeatureListing() {
             </div>
             <h3 className="mt-5 text-sm font-semibold text-neutral-900">19K+ user trust</h3>
             <p className="mt-1.5 text-sm text-neutral-500 leading-relaxed">
-              Collaborate with your team, share updates instantly, and achieve your goals faster.
+             Become part of 19,000+ new and expanding communities of active traders now around the globe, who Cryptomaty can help each and every day make smarter trades.
             </p>
           </div>
 
@@ -87,7 +85,7 @@ export default function FeatureListing() {
             </div>
             <h3 className="mt-5 text-sm font-semibold text-neutral-900">Deploy in 1 click</h3>
             <p className="mt-1.5 text-sm text-neutral-500 leading-relaxed">
-              Save time, boost efficiency, and focus on what truly matters for you.
+             No coding, no hassle. Trade with the press of a button using the ready-made trading strategies, and automation performs the task.
             </p>
           </div>
 
@@ -103,7 +101,7 @@ export default function FeatureListing() {
             </div>
             <h3 className="mt-5 text-sm font-semibold text-neutral-900">Seamless experience</h3>
             <p className="mt-1.5 text-sm text-neutral-500 leading-relaxed">
-              Seamlessly connect your favorite apps and platforms with our powerful integrations.
+              Start with AI screeners to live broker integration with an intuitive, all-in-one dashboard that eases all processes in your trading life.
             </p>
           </div>
 
@@ -117,9 +115,9 @@ export default function FeatureListing() {
                 loading="lazy"
               />
             </div>
-            <h3 className="mt-5 text-sm font-semibold text-neutral-900">Strategy templates</h3>
+            <h3 className="mt-5 text-sm font-semibold text-neutral-900">Total PNL</h3>
             <p className="mt-1.5 text-sm text-neutral-500 leading-relaxed">
-              Provides real-time data, actionable insights, and key metrics at a glance.
+              Start and keep track of your real-time returns and losses on a strategy and broker basis in a single look.
             </p>
           </div>
         </div>

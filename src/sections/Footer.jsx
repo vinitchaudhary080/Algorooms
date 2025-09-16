@@ -46,8 +46,7 @@ export default function Footer() {
 
             </a>
             <p className="mt-4 text-sm text-neutral-400 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Ac eu massa nunc sem.
-              Sed vestibulum platea adipiscing ornare malesuada augue.
+             Your mobile smart crypto dashboard is designed to assist traders in analysing markets, implementing trading strategies, and displaying profits in real-time. Smarter trading starts here.
             </p>
             <p className="mt-6 text-xs text-neutral-500">
               © 2025 Cryptomaty.
