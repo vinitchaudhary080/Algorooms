@@ -2,9 +2,9 @@ import React from "react";
 import { Leaf } from "lucide-react";
 
 // 👉 अपनी images को assets में रखो और नीचे वाले paths अपडेट कर दो
-import imgLarge from "../../assets/about/hero-1.png";
-import imgRightTop from "../../assets/about/hero-2.png";
-import imgRightBottom from "../../assets/about/hero-3.png";
+import imgLarge from "../../assets/about/team3.webp";
+import imgRightTop from "../../assets/about/team2.webp";
+import imgRightBottom from "../../assets/about/team1.webp";
 
 export default function AboutHero() {
   return (

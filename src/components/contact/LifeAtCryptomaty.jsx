@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // 👇 apne images import ya array bana lo
-import img1 from "@/assets/life/life1.jpg";
-import img2 from "@/assets/life/life2.jpg";
-import img3 from "@/assets/life/life3.jpg";
+import img1 from "@/assets/life/team1.webp";
+import img2 from "@/assets/life/team2.webp";
+import img3 from "@/assets/life/team3.webp";
+import img4 from "@/assets/life/team4.webp";
 
-const images = [img1, img2, img3];
+const images = [img1, img2, img3, img4];
 
 export default function LifeAtCryptomaty() {
   const [index, setIndex] = useState(0);

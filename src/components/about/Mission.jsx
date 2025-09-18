@@ -100,10 +100,10 @@ export default function Mission() {
 
         {/* Stats */}
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <Stat label="Year founded" from={1000} to={2010} duration={1400} start={startCount} />
-          <Stat label="Strategies Used by Traders" from={0} to={10}   duration={1400} suffix="K+" start={startCount} />
-          <Stat label="Faster backtesting and reporting"  from={0} to={95}   duration={1400} suffix="%" start={startCount} />
-          <Stat label="support to keep you tradin"     from={0} to={24}   duration={1400} suffix="/7" start={startCount} />
+          <Stat label="Year Cryptomaty was founded" from={1000} to={2024} duration={1400} start={startCount} />
+          <Stat label="Representative traders expanding with us." from={0} to={10}   duration={1400} suffix="K+" start={startCount} />
+          <Stat label="Quickened backtesting and reporting."  from={0} to={95}   duration={1400} suffix="%" start={startCount} />
+          <Stat label="Specialized assistance to traders."     from={0} to={24}   duration={1400} suffix="/7" start={startCount} />
         </div>
       </div>
     </section>

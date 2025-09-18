@@ -19,9 +19,9 @@ const TABS = [
     label: "Strategy Template",
     icon: CalendarCheck2,
     badge: "Create strategies",
-    title: "Stay organized and on track",
+    title: "Smarter Scheduling.Better Planning",
     desc:
-      "Effortlessly manage your time and tasks with our intuitive scheduling calendar. Create, modify, and share events with ease.",
+      "Find trading templates created by experts to win. Choose one, turn it on, and leave the rest to automation. No coding necessary.",
     cta: "Try now",
     video: vidStrategyTemplates,
   },
@@ -30,9 +30,9 @@ const TABS = [
     label: "Deployed strategies",
     icon: BarChart2,
     badge: "Deployed strategies",
-    title: "Track what matters at a glance",
+    title: "Deploy in 1 click",
     desc:
-      "Turn raw data into actionable insights. Visualize KPIs, discover trends, and make faster decisions with confidence.",
+      "No coding, no hassle. Trade with the press of a button using the ready-made trading strategies, and automation performs the task.",
     cta: "Deployed now",
     video: vidDeployedStrategies,
   },
@@ -41,9 +41,9 @@ const TABS = [
     label: "Backtest and analytics",
     icon: LayoutPanelTop,
     badge: "Backtest and analytics",
-    title: "Connect your favorite tools",
+    title: "Test Before You Trade.Smarter Backtests & Reports.",
     desc:
-      "Integrate with the apps you already use. Keep work in sync and automate the busywork — zero friction.",
+      "Run historical simulations, analyze detailed reports, and perfect your strategies using real market data. Minimize risks, maximize entries and exits, and trade with confidence supported by insights that matter.",
     cta: "Explore analytics",
     video: vidBacktest,
   },
@@ -51,10 +51,10 @@ const TABS = [
     id: "boards",
     label: "Track PNL",
     icon: LinkIcon,
-    badge: "Connect your broker",
-    title: "Plan and collaborate clearly",
+    badge: "Total PNL",
+    title: "Track Profits and Strategy ROI",
     desc:
-      "Organize projects with clean boards. Prioritize tasks, share context, and keep everyone aligned without the clutter.",
+      "Start and keep track of your real-time returns and losses on a strategy and broker basis in a single look.",
     cta: "Try now",
     video: vidTrack,
   },
@@ -130,9 +130,13 @@ export default function FeaturesHero() {
             </h3>
             <p className="mt-3 text-neutral-600 leading-relaxed">{tab.desc}</p>
 
+            {/* CTA Button → always go to Cryptomaty app */}
             <a
-              href="#"
-              className="mt-6 inline-flex items-center gap-2 rounded-xl px-5 py-3 text-[15px] font-semibold text-neutral-800 border border-neutral-200 hover:border-neutral-300"
+              href="https://web.cryptomaty.com/"
+              target="_self"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-xl px-5 py-3 text-[15px] font-semibold 
+                         text-neutral-800 border border-neutral-200 hover:border-neutral-300"
             >
               {tab.cta} <span aria-hidden>→</span>
             </a>
@@ -143,7 +147,7 @@ export default function FeaturesHero() {
             <div className="rounded-3xl">
               <div className="overflow-hidden rounded-2xl">
                 <video
-                  key={tab.video}            // ensures proper swap on tab change
+                  key={tab.video}
                   src={tab.video}
                   className="w-full h-auto object-cover transition-transform duration-500 will-change-transform hover:scale-[1.01]"
                   autoPlay

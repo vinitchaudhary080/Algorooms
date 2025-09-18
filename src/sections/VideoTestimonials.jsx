@@ -2,22 +2,22 @@ import React, { useEffect, useRef, useState } from "react";
 import { X } from "lucide-react";
 
 // 🎥 Individual testimonial videos
+// ✅ imports: sirf 3 videos hi use kar rahe hain
 import manshiVideo from "../assets/review/manshi.webm";
-import kanchanVideo from "../assets/review/kanchan.webm";
 import pushpaVideo from "../assets/review/pushpa.webm";
 import ashvinVideo from "../assets/review/ashvin.webm";
 
-// 8 cards (repeat your 4 vids in a cycle, or swap to unique ones if you have them)
+// ✅ 8 cards – 3 videos ko cycle kiya gaya hai
 const PEOPLE = [
-  { name: "Rohit Sharma",  title: "Lorem ipsum dolor sit amet.",               video: manshiVideo },
-  { name: "Pushpa Raj",    title: "Lorem ipsum dolor sit amet consectetur.",   video: pushpaVideo },
-  { name: "Manish Yadav",  title: "Lorem ipsum dolor sit amet.",               video: kanchanVideo },
-  { name: "Aarav Mehta",   title: "Lorem ipsum dolor sit amet.",               video: ashvinVideo },
-  { name: "Saanvi Verma",  title: "Lorem ipsum dolor sit amet.",               video: manshiVideo },
-  { name: "Ishaan Patel",  title: "Lorem ipsum dolor sit amet.",               video: pushpaVideo },
-  { name: "Aditi Singh",   title: "Lorem ipsum dolor sit amet.",               video: kanchanVideo },
-  { name: "Kabir Khanna",  title: "Lorem ipsum dolor sit amet.",               video: ashvinVideo },
+  { name: "Rohit Sharma",  title: "Investor and Part-Time Trader",                    video: ashvinVideo },
+  { name: "Pushpa Raj",    title: "New Trader", video: pushpaVideo },
+  { name: "Manish Yadav",  title: "Swing Trader",                  video: manshiVideo },
+    { name: "Rohit Sharma",  title: "Investor and Part-Time Trader",                    video: ashvinVideo },
+  { name: "Pushpa Raj",    title: "New Trader", video: pushpaVideo },
+  { name: "Manish Yadav",  title: "Swing Trader",                  video: manshiVideo },
+
 ];
+
 
 export default function VideoTestimonials() {
   // marquee scroll
@@ -152,40 +152,41 @@ export default function VideoTestimonials() {
       </div>
 
       {/* Modal */}
-      {isModalOpen && (
-        <div
-          className="fixed inset-0 z-[70] grid place-items-center bg-black/70 p-4 overflow-y-auto"
-          onClick={closeModal} // backdrop click closes + pauses/resets
-          aria-modal="true"
-          role="dialog"
-        >
-          {/* Panel */}
-          <div
-            className="relative w-full max-w-3xl rounded-2xl bg-black shadow-xl my-8"
-            onClick={(e) => e.stopPropagation()} // prevent backdrop close
-          >
-            {/* Close (X) — closes only, no pause/reset */}
-            <button
-              type="button"
-              onClick={closeModalOnly}
-              aria-label="Close"
-              className="absolute right-2 top-2 inline-flex items-center justify-center rounded-full p-2 text-white/80 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30"
-            >
-              <X className="h-5 w-5" />
-            </button>
+{isModalOpen && (
+  <div
+    className="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 p-4"
+    onClick={closeModal} // backdrop click closes
+    aria-modal="true"
+    role="dialog"
+  >
+    {/* Panel */}
+    <div
+      className="relative w-full h-full flex items-center justify-center"
+      onClick={(e) => e.stopPropagation()} // prevent backdrop close
+    >
+      {/* Close (X) */}
+      <button
+        type="button"
+        onClick={closeModal}
+        aria-label="Close"
+        className="absolute right-4 top-4 inline-flex items-center justify-center rounded-full p-2 text-white/80 hover:text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/30 z-[1000]"
+      >
+        <X className="h-6 w-6" />
+      </button>
 
-            {/* Video — scales to viewport */}
-            <video
-              ref={modalVideoRef}
-              src={activeVideoSrc || ""}
-              className="w-full h-auto max-h-[80vh] rounded-2xl"
-              autoPlay
-              controls
-              playsInline
-            />
-          </div>
-        </div>
-      )}
+      {/* Video fullscreen */}
+      <video
+        ref={modalVideoRef}
+        src={activeVideoSrc || ""}
+        className="max-h-[90vh] w-auto rounded-xl shadow-2xl"
+        autoPlay
+        controls
+        playsInline
+      />
+    </div>
+  </div>
+)}
+
     </section>
   );
 }
