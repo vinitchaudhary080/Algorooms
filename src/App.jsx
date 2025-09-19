@@ -11,6 +11,8 @@ import Terms from "@/pages/Terms";
 import Privacy from "@/pages/Privacy";
 import ScrollToTop from "@/components/ScrollToTop";
 import StratCrypto from "@/pages/blog/StratCrypto";
+import Cryptocurrency from "@/pages/blog/Cryptocurrency";
+import Blockchain from "@/pages/blog/Blockchain";
 
 export default function App() {
   return (
@@ -27,6 +29,8 @@ export default function App() {
        <Route path="/privacy" element={<Privacy />} />
        <Route path="/blog/what-is-crypto-trading" element={<CodeDetail />} />
       <Route path="/blog/how-to-start-crypto-trading" element={<StratCrypto />} />
+      <Route path="/blog/cryptocurrency-digital-revolution" element={<Cryptocurrency />}/>
+      <Route path="/blog/blockchain-force-transforming" element={<Blockchain />}/>
        
     </Routes>
     </>

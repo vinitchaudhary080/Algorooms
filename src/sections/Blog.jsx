@@ -28,9 +28,9 @@ const posts = [
   },
   {
     id: 3,
-    href: "/blog/building-brand-loyalty-support",
-    category: "Insights",
-    title: "Building brand loyalty through exceptional customer support",
+    href: "/blog/cryptocurrency-digital-revolution",
+    category: "Cryptocurrency",
+    title: "Cryptocurrency: The Digital Revolution Reshaping Money",
     date: "Jan 7, 2025",
     image: img3,
     alt: "An orange bowl on warm background",

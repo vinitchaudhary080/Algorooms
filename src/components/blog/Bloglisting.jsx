@@ -5,15 +5,16 @@ import { Link } from "react-router-dom";
 import img1 from "../../assets/blog/blog-1.png";
 import img2 from "../../assets/blog/blog-2.png";
 import img3 from "../../assets/blog/blog-3.png";
+import img4 from "../../assets/blog/blog-4.png";
 
 const posts = [
   {
     id: 1,
-    href: "/blog/what-is-crypto-trading",
-    category: "Crypto Trading",
-    title: "What is Crypto Trading? A Beginner’s Guide in Simple Words",
+    href: "/blog/blockchain-force-transforming",
+    category: "Blockchain",
+    title: "Blockchain: The Force Transforming the Future of Stock Markets",
     date: "Jan 9, 2025",
-    image: img1,
+    image: img4,
     alt: "A terracotta pot plant against soft orange wall",
   },
   {
@@ -27,9 +28,9 @@ const posts = [
   },
   {
     id: 3,
-    href: "/blog/building-brand-loyalty-support",
-    category: "Insights",
-    title: "Building brand loyalty through exceptional customer support",
+    href: "/blog/cryptocurrency-digital-revolution",
+    category: "Cryptocurrency",
+    title: "Cryptocurrency: The Digital Revolution Reshaping Money",
     date: "Jan 7, 2025",
     image: img3,
     alt: "An orange bowl on warm background",

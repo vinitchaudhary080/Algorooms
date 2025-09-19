@@ -23,7 +23,7 @@ function useCountUp({ from = 0, to = 100, duration = 1500, start = false }) {
   return val;
 }
 
-function Stat({ label, from, to, duration = 1500, suffix = "", start = false }) {
+function Stat({ label, from, to, duration = 1500,  prefix = "", suffix = "", start = false }) {
   // 👆 ab yahan koi observer nahi — parent trigger se start aayega
   const value = useCountUp({ from, to, duration, start });
 
@@ -87,10 +87,10 @@ export default function Mission() {
           {/* Right: Copy */}
           <div className="text-neutral-600 leading-relaxed">
             <p>
-              We are aimed at making traders smarter by providing them with classier tools and ideas at Cryptomaty. We are set to make the crypto-trading process easier by integrating AI-based analytics, live market monitoring, and automated strategies into a singular and well-polished platform.
+              Cryptomaty was established in the year with the mission of streamlining and enhancing crypto trade. What began as a concept in 2024 has since become a worldwide platform that traders appreciate using smarter tools and will execute faster and be fully aware of each choice.
             </p>
             <p className="mt-4">
-             In our opinion, trading is supposed to be effective, transparent, and available. With a single dashboard and simple features, we can assist all traders to make informed choices depending on the data and develop steadily.
+             There are a number of strategies that have been developed and tested by traders all over the world using Cryptomaty. From the amateur to the professional, our expanding community continues to be dependent on the same strategies to trade in a smarter way to gain a competitive advantage in the market daily. 
             </p>
           </div>
         </div>
@@ -100,8 +100,13 @@ export default function Mission() {
 
         {/* Stats */}
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <Stat label="Year Cryptomaty was founded" from={1000} to={2024} duration={1400} start={startCount} />
-          <Stat label="Representative traders expanding with us." from={0} to={10}   duration={1400} suffix="K+" start={startCount} />
+        <Stat
+  label="Start now, no secret charges, no initiation fee."
+  prefix="₹"
+/>
+
+
+          <Stat label="Representative traders expanding with us." from={0} to={19}   duration={1400} suffix="K+" start={startCount} />
           <Stat label="Quickened backtesting and reporting."  from={0} to={95}   duration={1400} suffix="%" start={startCount} />
           <Stat label="Specialized assistance to traders."     from={0} to={24}   duration={1400} suffix="/7" start={startCount} />
         </div>

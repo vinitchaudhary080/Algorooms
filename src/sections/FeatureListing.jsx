@@ -17,7 +17,7 @@ export default function FeatureListing() {
         <div className="text-center max-w-3xl mx-auto">
           <span className="inline-flex items-center gap-2 text-sm font-medium text-green-600">
             <Zap className="h-4 w-4 text-green-600" />
-            Features
+            Easy to use
           </span>
           <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900">
             Trade Smarter.  <br className="hidden sm:block" />
