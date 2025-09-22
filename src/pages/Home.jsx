@@ -5,7 +5,7 @@ import SEO from "@/components/SEO.jsx";
 import Navbar from "@/components/Navbar";
 import Hero from "@/sections/Hero.jsx";
 import HeroShowcase from "@/sections/HeroShowcase";
-import TrustedBy from "@/sections/TrustedBy";
+
 import Features from "@/sections/Features";
 import Strategies from "@/sections/Strategies";
 import Charts from "@/sections/Charts";
@@ -51,11 +51,7 @@ export default function Home() {
         <HeroShowcase />
       </Reveal>
 
-      {/* Logos carousel - subtle fade */}
-      <Reveal effect="fade" delay={50}>
-        <TrustedBy />
-      </Reveal>
-
+    
       {/* Feature blocks - layered stagger */}
       <Reveal effect="fade-up"><Features /></Reveal>
       <Reveal effect="fade-up" delay={100}><Strategies /></Reveal>

@@ -11,10 +11,10 @@ import ashvinVideo from "../assets/review/ashvin.webm";
 const PEOPLE = [
   { name: "Rohit Sharma",  title: "Investor and Part-Time Trader",                    video: ashvinVideo },
   { name: "Pushpa Raj",    title: "New Trader", video: pushpaVideo },
-  { name: "Manish Yadav",  title: "Swing Trader",                  video: manshiVideo },
+  { name: "Manisha ",  title: "Swing Trader",                  video: manshiVideo },
     { name: "Rohit Sharma",  title: "Investor and Part-Time Trader",                    video: ashvinVideo },
   { name: "Pushpa Raj",    title: "New Trader", video: pushpaVideo },
-  { name: "Manish Yadav",  title: "Swing Trader",                  video: manshiVideo },
+  { name: "Manisha ",  title: "Swing Trader",                  video: manshiVideo },
 
 ];
 
