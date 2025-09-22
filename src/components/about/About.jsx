@@ -35,9 +35,9 @@ export default function About() {
       </Reveal>
 
       {/* Team - slide up */}
-      <Reveal effect="fade-up">
+      {/* <Reveal effect="fade-up">
         <Team />
-      </Reveal>
+      </Reveal> */}
 
       <Footer />
     </>
