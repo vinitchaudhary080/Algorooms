@@ -1,6 +1,7 @@
 // src/sections/Hero.jsx
 import { useEffect, useState } from "react";
 import { Calendar, BarChart3, Layers, Layout } from "lucide-react";
+import heroBg from "@/assets/hero.png"; // make sure hero.png is inside src/assets/
 
 // Counter with looping every 60s
 function Counter({ value, duration = 2000, loopInterval = 60000 }) {
@@ -58,10 +59,25 @@ function Stat({ value, label }) {
 
 export default function Hero() {
   return (
-    <section className="relative bg-white mt-0 sm:mt-20 scroll-mt-nav">
-      <div className="container-xxl relative py-4 sm:pt-20 sm:pb-10 text-center">
+    <section className="relative bg-white mt-0 sm:mt-20 scroll-mt-nav overflow-visible">
+      {/* ✅ Rotating background image */}
+      <div
+        className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none"
+        aria-hidden="true"
+      >
+        <div className="transform" style={{ transform: "translateY(4%)" }}>
+          <img
+            src={heroBg}
+            alt="Hero background"
+            className="bg-rotating opacity-20 w-[190vw] max-w-none sm:w-[150vw] md:w-[130vw] lg:w-[115vw]"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+      </div>
+
+      <div className="container-xxl relative z-10 py-4 sm:pt-20 sm:pb-10 text-center">
         {/* --- SIDE STATS (lg+) --- */}
-        {/* Left stack */}
         <div
           className="
             pointer-events-none
@@ -75,7 +91,6 @@ export default function Hero() {
           <Stat value="19K+" label="Trusted traders with us." />
         </div>
 
-        {/* Right stack */}
         <div
           className="
             pointer-events-none
@@ -122,7 +137,6 @@ export default function Hero() {
         {/* --- MOBILE STATS (2x2 grid, lg se chhupao) --- */}
         <div className="mt-10 lg:hidden">
           <div className="grid grid-cols-2 gap-6">
-            {/* Row 1 */}
             <div className="text-center">
               <div className="text-2xl font-semibold text-[#4F7DFF]">
                 <Counter value="₹0" />
@@ -131,12 +145,10 @@ export default function Hero() {
             </div>
             <div className="text-center">
               <div className="text-2xl font-semibold text-[#4F7DFF]">
-                {/* $ prefix ko suffix logic ke chalte avoid kiya, UI me phir bhi clear hai */}
                 <Counter value="30M" />
               </div>
               <div className="mt-1 text-xs text-neutral-500">Total funding</div>
             </div>
-            {/* Row 2 */}
             <div className="text-center">
               <div className="text-2xl font-semibold text-[#4F7DFF]">
                 <Counter value="19K+" />

@@ -63,7 +63,7 @@ export default function ContactHero() {
         </div>
 
         {/* Right form */}
-        <div>
+        {/* <div>
           <div className="max-w-lg mx-auto">
             <form className="bg-white rounded-2xl shadow p-6 sm:p-8 space-y-5">
               <div>
@@ -112,7 +112,7 @@ export default function ContactHero() {
               </div>
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
