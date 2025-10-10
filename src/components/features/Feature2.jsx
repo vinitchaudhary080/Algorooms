@@ -1,4 +1,4 @@
-// src/components/features/Feature1.jsx
+// src/components/features/Feature2.jsx
 import React from "react";
 import augustUpdateImg from "@/assets/features/august-update.png"; // <- tum yeh image provide karoge
 
