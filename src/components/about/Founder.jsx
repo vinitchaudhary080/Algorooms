@@ -1,55 +1,61 @@
+// src/sections/Founder.jsx
 import React from "react";
-import founderImg from "@/assets/about/founder.png"; // <- your image
+import founderImg from "@/assets/about/founder.png"; // ← image ka path update kar lena
 
 export default function Founder() {
   return (
-    <section className="bg-white py-16 sm:py-24 scroll-mt-nav">
+    <section className="bg-[#F6F6F8] py-16 sm:py-24 scroll-mt-nav">
       <div className="container-xxl">
-        <div className="grid items-center gap-10 md:grid-cols-2">
-          {/* Left: copy */}
-          <div>
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-neutral-900">
-              Note from the founder
-            </h2>
-
-            <div className="mt-5 space-y-4 text-neutral-600 leading-relaxed">
-              <p>
-              The sole purpose behind this platform we had built at Cryptomaty actually was to make the process of crypto trading easier (not more complex) for anyone. Our team is committed to creating software that removes complexity, needs time-saving tools, and allows traders to make decisions confidently.
-              </p>
-              <p>
-                This is not just a brand. It is a community, a space where ideas
-                grow, challenges are met with creativity, and every voice
-                matters. None of this would be possible without your support,
-                trust, and belief in what we stand for. Thank you for being a
-                part of this story.
-              </p>
-              <p>
-                We are always evolving, improving, and listening to our community to make sure that Cryptomaty is developed in accordance with the changing needs of traders. It is good to see you here on this trade voyage, and you, in company, may expect a still higher success.
-              </p>
-            </div>
-
-            {/* Signature row */}
-            <div className="mt-8 flex items-center justify-between max-w-sm">
-              <div>
-                <div className="text-sm font-semibold text-neutral-900">Reyansh Upadhyay</div>
-                <div className="text-xs text-neutral-500">Founder</div>
-              </div>
-              {/* Signature (optional image can be swapped later) */}
-              <div className="text-2xl font-[600] italic text-neutral-900 select-none">
-                Reyansh&nbsp;Upadhyay.
-              </div>
-            </div>
-          </div>
-
-          {/* Right: founder photo */}
-          <div className="relative">
+        {/* Outer container with ring & rounded edges */}
+        <div className="rounded-2xl ring-5 ring-[#F6F6F9] bg-white/50 p-3 sm:p-5 shadow-[0_10px_30px_rgba(0,0,0,0.03)]">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-10">
+            {/* ===== Left Image ===== */}
             <div className="overflow-hidden rounded-2xl">
               <img
                 src={founderImg}
                 alt="Founder at workspace"
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover rounded-2xl"
                 loading="lazy"
               />
+            </div>
+
+            {/* ===== Right Card ===== */}
+            <div className="bg-white rounded-2xl ring-5 ring-[#F6F6F9] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)]">
+              {/* Badge */}
+              <span className="inline-flex items-center rounded-full bg-[#EEF2FF] text-[#3B66F6] px-2.5 py-1 text-[11px] font-semibold">
+                Founder
+              </span>
+
+              {/* Heading */}
+              <h2 className="mt-3 text-2xl sm:text-[26px] font-semibold leading-snug text-neutral-900">
+                Lorem ipsum dolor sit amet consectetur.
+              </h2>
+
+              {/* Paragraphs */}
+              <p className="mt-3 text-[14px] leading-relaxed text-neutral-600">
+                Lorem ipsum dolor sit amet consectetur. Nibh lobortis mi aliquet
+                volutpat eu sit molestie enim sed. Tristique lectus donec amet ut
+                dictum ante est fermentum. Morbi nulla donec varius justo dolor
+                pretium auctor. Etiam tincidunt consequat sit at eleifend.
+                Venenatis metus in id nunc vitae. Id urna sollicitudin quisque
+                ultricies convallis nulla ultricies in.
+              </p>
+
+              <p className="mt-4 text-[14px] leading-relaxed text-neutral-600">
+                Lorem ipsum dolor sit amet consectetur. Nibh lobortis mi aliquet
+                volutpat eu sit molestie enim sed. Tristique lectus donec amet ut
+                dictum ante est fermentum. Morbi nulla donec varius justo dolor
+                pretium auctor.
+              </p>
+
+              {/* Quote block */}
+              <blockquote className="mt-6 sm:mt-52 rounded-xl bg-white/70 p-4 sm:p-5 ring-1 ring-neutral-200">
+                <p className="text-[15px] sm:text-[16px] font-semibold text-neutral-900">
+                  “Lorem ipsum dolor sit amet consectetur. Nibh lobortis mi
+                  aliquet volutpat eu sit molestie enim sed. Tristique lectus
+                  donec amet ut dictum ante est fermentum.”
+                </p>
+              </blockquote>
             </div>
           </div>
         </div>

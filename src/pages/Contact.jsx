@@ -5,7 +5,7 @@ import Footer from "@/sections/Footer";
 import ContactHero from "@/components/contact/ContactHero";
 import ContactHowItWorks from "@/components/contact/ContactHowItWorks";
 import LifeAtCryptomaty from "@/components/contact/LifeAtCryptomaty";
-import FAQ from "@/sections/FAQ"; 
+import FAQ from "@/sections/FAQFull"; 
 import Reveal from "@/components/Reveal"; // 👈 import
 
 export default function Contact() {

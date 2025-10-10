@@ -1,64 +1,60 @@
+// src/sections/AboutHero.jsx
 import React from "react";
-import { Leaf } from "lucide-react";
-
-// 👉 अपनी images को assets में रखो और नीचे वाले paths अपडेट कर दो
-import imgLarge from "../../assets/about/team3.webp";
-import imgRightTop from "../../assets/about/team2.webp";
-import imgRightBottom from "../../assets/about/team1.webp";
+import powerBlueIcon from "@/assets/about/power-blue.png"; // 👈 आपका नीला आइकन (inline icon)
 
 export default function AboutHero() {
   return (
-    <section className=" py-16 sm:py-20 bg-[#F6F6F8] scroll-mt-nav">
+    <section className="bg-[#F6F6F8] py-16 sm:py-20 scroll-mt-nav">
       <div className="container-xxl">
-        {/* Top: Badge + Heading + Subtext */}
-        <div className="text-center max-w-4xl mx-auto">
-          <span className="inline-flex items-center gap-2 text-sm font-medium text-green-600">
-            <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-green-50 ring-1 ring-green-200">
-              <Leaf className="h-3 w-3 text-green-600" />
-            </span>
-            About us
+        {/* ===== Top: Badge ===== */}
+        <div className="text-center">
+          <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-semibold text-neutral-900 ring-2 ring-[#F6F6F9]">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#3B66F6]" />
+            Version 2.0
           </span>
-
-          <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-neutral-900">
-            The Future of  <br className="hidden sm:block" />
-            Crypto Trading.
-          </h1>
-
-          <p className="mt-4 text-neutral-500">
-            Trader-friendly and trusted by thousands, our mission is to make trading in crypto as simple as it should be, using AI-powered trading tools, automation, and a single dashboard to trade smarter each day.
-          </p>
         </div>
 
-        {/* Images */}
-        <div className="mt-10 sm:mt-12 grid gap-5 sm:gap-6 md:grid-cols-2">
-          {/* Left: big image */}
-          <div className="overflow-hidden rounded-2xl border border-neutral-200">
-            <img
-              src={imgLarge}
-              alt="Studio workspace with large windows and plants"
-              loading="eager"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        {/* ===== Heading ===== */}
+        <div className="mt-5 text-center">
+          <h1 className="text-[40px] leading-[1.12] sm:text-6xl font-black font-semibold tracking-tight text-neutral-900">
+            Power{" "}
+            <span className="inline-flex items-center align-middle">
+              <img
+                src={powerBlueIcon}
+                alt=""
+                className="mx-1 inline-block h-16 w-16 sm:h-24 sm:w-24 drop-shadow-[0_8px_18px_rgba(59,102,246,0.35)]"
+                draggable="false"
+              />
+            </span>
+            up <span className="text-[#3B66F6]">your</span>
+            <br />
+            Trading and Profit.
+          </h1>
 
-          {/* Right: two stacked images */}
-          <div className="grid grid-rows-2 gap-5 sm:gap-6">
-            <div className="overflow-hidden rounded-2xl border border-neutral-200">
-              <img
-                src={imgRightTop}
-                alt="Team collaborating in modern office"
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-neutral-200">
-              <img
-                src={imgRightBottom}
-                alt="Designer working on laptop"
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          {/* Subtext */}
+          <p className="mt-4 max-w-xl mx-auto text-[15px] text-neutral-600">
+            Stay up to date with the latest improvements, features,
+            and updates — all in one place.
+          </p>
+
+          {/* CTA */}
+          <div className="mt-6">
+            <a
+              href="#get-started"
+              className="
+                inline-flex items-center gap-2
+                rounded-2xl
+                px-5 py-3
+                text-[15px] font-semibold text-white
+                bg-gradient-to-r from-[#3B66F6] to-[#1E4CEA]
+                shadow-[0_10px_30px_rgba(40,100,223,0.35)]
+                border-3 border-[#6C88FF]
+                transition-all
+                hover:shadow-[0_14px_36px_rgba(40,100,223,0.45)]
+              "
+            >
+              Get started →
+            </a>
           </div>
         </div>
       </div>

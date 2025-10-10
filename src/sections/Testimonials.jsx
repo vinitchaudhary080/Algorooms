@@ -1,73 +1,86 @@
 // src/sections/Testimonials.jsx
 import React from "react";
-import { Quote } from "lucide-react";
-// import fadeImg from "../assets/Fade.png"; // bottom fade (optional)
+
+// ⭐ simple star row (no external images)
+function Stars({ value = 5 }) {
+  const total = 5;
+  return (
+    <div className="flex items-center gap-0.5">
+      {Array.from({ length: total }).map((_, i) => (
+        <svg
+          key={i}
+          viewBox="0 0 20 20"
+          className={`h-4 w-4 ${i < value ? "text-[#3B66F6]" : "text-neutral-300"}`}
+          fill="currentColor"
+        >
+          <path d="M10 15.27l-5.18 3.04 1.4-5.99L1 7.97l6.09-.52L10 2l2.91 5.45 6.09.52-5.22 4.35 1.4 5.99z" />
+        </svg>
+      ))}
+    </div>
+  );
+}
 
 const items = [
-  { text: "The AI screener is something that saves lives. “I would be able to identify bullish coins within minutes of time and make trades confidently. It saves me hours every day.", name: "Amit Verma", role: "Swing Trader" },
-  { text: "Backtesting provided me with clarity. “I was able to test my strategy and then viewed the results, and even did it live with no fear. It's like having a safety net.", name: "Priya Nair", role: "Day Trader" },
-  { text: "There is everything inside a single dashboard: charts, strategies, and broker P&L. Trading is easier and effective at this point.", name: "Rahul Mehta", role: "Options Trader" },
-  { text: "I have feared a complex application, but Cryptomaty is top of the world easy to use. There is no coding, no confusion, just smart trading tools that make it happen.", name: "Neha Sharma", role: "Crypto Enthusiast" },
-  { text: "From sentiment detection to live P&L, Cryptomaty has got it all. I don't have to take a lot of different tools and pieces with me every time they're in one of the clean dashboards.", name: "Karan Patel:", role: "Professional Trader" },
-  { text: "As a beginner, I was apprehensive about dealing with crypto trading. But Cryptomaty's AI tools made me believe.'This is How I Started Small, And The Results Speak For Themselves'.", name: "Ananya Joshi", role: "New Trader" },
-  { text: "The ability to use live charts and track returns on strategy is invaluable. I time myself better, monitor my performance, trade smarter, every single day.", name: "Vikram Sing", role: "Day traders / Swing Trader" },
-  { text: "'Integrating my broker account was very seamless.' My P&L updates in real time, which saves me hours every week and allows me to discuss strategy.", name: "Rohit Desai", role: "Algorithmic Trader" },
-  { text: "I launched my first strategy in a matter of minutes without doing any coding.The templates and automation work perfectly; it doesn't seem like trading finally runs on autopilot.", name: "Sneha Kulkarni", role: " Investor and Part-Time Trader" },
+  { text: "Algo helped us launch in hours, not days. Super smooth process.", name: "Alex B.", role: "Product Manager", rating: 5 },
+  { text: "I used Algo for 3 projects — it saved me so much time.", name: "Jasmine R.", role: "Freelance Developer", rating: 5 },
+  { text: "From idea to launch, Algo made everything effortless.", name: "Leo D.", role: "Founder", rating: 5 },
+  { text: "The layout is cleaner and works right out of the box.", name: "Marta G.", role: "UI Designer", rating: 4 },
+  { text: "Algo gave us a professional site in no time — exactly what we needed.", name: "Daniel K.", role: "Startup Founder", rating: 5 },
+  { text: "Super easy to use and saves hours of design work.", name: "Sophia L.", role: "Marketing Lead", rating: 5 },
+  { text: "Clean, modern, and flexible — fits perfectly with our brand.", name: "Chris M.", role: "Indie Hacker", rating: 5 },
+  { text: "I built faster with a better experience overall.", name: "Neeraj S.", role: "Engineer", rating: 4 },
 ];
 
 export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative isolate py-20 sm:py-28 overflow-hidden scroll-mt-nav"
-      style={{ background: "linear-gradient(to bottom, #F6F6F8 0%, #FFFFFF 100%)" }}
+      className="relative py-20 sm:py-28 scroll-mt-nav bg-gradient-to-b from-[#F8F9FB] to-white"
     >
-      {/* Optional bottom fade image
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 mb-[-5px] z-50">
-        <img src={fadeImg} alt="fade effect" className="mx-auto w-full max-w-[1400px] select-none" loading="lazy" />
-      </div> */}
-
-      <div className="container-xxl relative">
+      <div className="container-xxl">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto">
-          <span className="inline-flex items-center gap-2 text-sm font-medium text-green-600">
-            <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+        <div className="text-center max-w-4xl mx-auto">
+          <span className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs text-black font-semibold ring-2 ring-[#F6F6F9]">
             Testimonials
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900">
-            Trusted by 19,000+ Active <br className="hidden sm:block" />
-            Traders Worldwide
+          <h2 className="mt-4 text-4xl sm:text-5xl font-semibold  leading-tight tracking-tight text-neutral-900">
+            What our users love
+            <br /> about Algorooms.
           </h2>
-          <p className="mt-4 text-neutral-500">
-            Thousands of traders in India, who are amateurs and professional users, have confided in Cryptomaty to make trading easy and get more profits.
-          </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="mt-12 grid gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {items.slice(0, 3).map((t, i) => (
-            <article key={i} className="rounded-2xl border border-neutral-200 bg-white p-5 sm:p-6">
-              <Quote className="h-4 w-4 text-neutral-300" />
-              <p className="mt-3 text-[15px] leading-relaxed text-neutral-700">“{t.text}”</p>
+        {/* Cards */}
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {items.map((t, i) => (
+            <article
+              key={i}
+              className="relative rounded-2xl bg-white p-5 sm:p-6 shadow-[0_8px_30px_rgba(0,0,0,0.04)] ring-5 ring-[#F6F6F9] transition hover:shadow-[0_10px_40px_rgba(59,102,246,0.1)]"
+            >
+              {/* faint quotes */}
+              <span className="pointer-events-none absolute right-4 top-3 text-neutral-200 select-none text-4xl leading-none">
+                &rdquo;
+              </span>
 
-              {/* avatar removed */}
-              <div className="mt-4">
-                <div className="text-sm font-semibold text-neutral-900">{t.name}</div>
-                <div className="text-xs text-neutral-500">{t.role}</div>
-              </div>
-            </article>
-          ))}
+              {/* stars */}
+              <Stars value={t.rating} />
 
-          {/* remaining cards only on sm+ */}
-          {items.slice(3).map((t, i) => (
-            <article key={`extra-${i}`} className="hidden sm:block rounded-2xl border border-neutral-200 bg-white p-5 sm:p-6">
-              <Quote className="h-4 w-4 text-neutral-300" />
-              <p className="mt-3 text-[15px] leading-relaxed text-neutral-700">“{t.text}”</p>
+              {/* text */}
+              <p className="mt-3 text-[15px] leading-relaxed text-neutral-800">
+                “{t.text}”
+              </p>
 
-              {/* avatar removed */}
-              <div className="mt-4">
-                <div className="text-sm font-semibold text-neutral-900">{t.name}</div>
-                <div className="text-xs text-neutral-500">{t.role}</div>
+              {/* divider */}
+              <div className="mt-4 h-px w-full bg-neutral-200/70" />
+
+              {/* user */}
+              <div className="mt-4 flex items-center gap-3">
+                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-neutral-100 text-[13px] font-semibold text-neutral-700 ring-1 ring-black/5">
+                  {t.name.split(" ").map(s => s[0]).slice(0,2).join("")}
+                </span>
+                <div>
+                  <div className="text-sm font-semibold text-neutral-900">{t.name}</div>
+                  <div className="text-xs text-neutral-500">{t.role}</div>
+                </div>
               </div>
             </article>
           ))}

@@ -7,6 +7,7 @@ import BlogPage from "@/pages/Blog";
 import CodeDetail from "@/pages/blog/CodeDetail";
 import Contact from "@/pages/Contact"; 
 import FeaturesPage from "@/pages/Features";
+import PricingPage from "@/pages/PricingsPage";
 import Terms from "@/pages/Terms";
 import Privacy from "@/pages/Privacy";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -25,6 +26,7 @@ export default function App() {
        <Route path="/blog/code-detail" element={<CodeDetail />} />
        <Route path="/contact" element={<Contact />} /> 
        <Route path="/features" element={<FeaturesPage />} />
+       <Route path="/pricing" element={<PricingPage />} />
        <Route path="/terms" element={<Terms />} />
        <Route path="/privacy" element={<Privacy />} />
        <Route path="/blog/what-is-crypto-trading" element={<CodeDetail />} />

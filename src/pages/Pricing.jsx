@@ -1,25 +1,20 @@
-// src/pages/FeaturesPage.jsx
+// src/pages/PricingsPage.jsx
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/sections/Footer";
-import FeaturesHero from "@/components/features/FeaturesHero";
-import Feature1 from "@/components/features/Feature1";
-import Feature2 from "@/components/features/Feature2";
-import Feature3 from "@/components/features/Feature3";
-import Feature4 from "@/components/features/Feature4";
-import HowItWorks from "@/sections/HowItWorks";
-import WhyChoose from "@/sections/WhyChoose";
+import PricingHero from "@/components/pricing/PricingHero";
+
 import FAQ from "@/sections/FAQ";
 import Reveal from "@/components/Reveal"; // 👈 add
 
-export default function FeaturesPage() {
+export default function PricingPage() {
   return (
     <>
       <Navbar />
 
       {/* Hero – thoda zoom for punchy entry */}
       <Reveal effect="zoom" duration={700}>
-        <FeaturesHero />
+        <PricingHero />
       </Reveal>
 
       {/* Listed / Mosaic – slide up */}

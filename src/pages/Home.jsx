@@ -12,9 +12,10 @@ import Charts from "@/sections/Charts";
 import FeatureListing from "@/sections/FeatureListing";
 import HowItWorks from "@/sections/HowItWorks";
 import WhyChoose from "@/sections/WhyChoose";
-import Broker from "@/sections/Broker";
-import Testimonials from "@/sections/Testimonials";
+import Benefits from "@/sections/Benefits";
+import Testimonials from "@/sections/Testimonials";  
 import VideoTestimonials from "@/sections/VideoTestimonials";
+import Pricing from "@/sections/Pricing";
 import Blog from "@/sections/Blog";
 import FAQ from "@/sections/FAQ";
 import Footer from "@/sections/Footer";
@@ -46,10 +47,7 @@ export default function Home() {
         <Hero />
       </Reveal>
 
-      {/* Showcase - slide up */}
-      <Reveal effect="fade-up">
-        <HeroShowcase />
-      </Reveal>
+  
 
     
       {/* Feature blocks - layered stagger */}
@@ -58,16 +56,20 @@ export default function Home() {
       <Reveal effect="fade-up" delay={150}><Charts /></Reveal>
 
       {/* Listing + HowItWorks */}
-      <Reveal effect="fade-up"><FeatureListing /></Reveal>
       <Reveal effect="fade-up" delay={100}><HowItWorks /></Reveal>
+      <Reveal effect="fade-up"><FeatureListing /></Reveal>
+     
 
-      {/* Why choose + Broker */}
+      {/* Why choose + Benefits */}
       <Reveal effect="fade-right"><WhyChoose /></Reveal>
-      <Reveal effect="fade-left"><Broker /></Reveal>
+      <Reveal effect="fade-left"><Benefits /></Reveal>
 
       {/* Social proof */}
       <Reveal effect="fade-up"><Testimonials /></Reveal>
-      <Reveal effect="fade-up" delay={120}><VideoTestimonials /></Reveal>
+      <Reveal effect="fade-up"><VideoTestimonials /></Reveal> 
+
+      <Reveal effect="fade-up"><Pricing /></Reveal> 
+    
 
       {/* Blog + FAQ */}
       <section id="blogs" className="scroll-mt-nav">

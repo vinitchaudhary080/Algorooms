@@ -1,81 +1,181 @@
-// src/components/blog/Bloglisting.jsx
+// src/components/blog/BlogListing.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 
-// 👉 apni images assets/blog/… me rakh lo (ya URLs use kar lo)
+// 👉 अपनी images यहाँ import करें
 import img1 from "../assets/blog/blog-1.png";
 import img2 from "../assets/blog/blog-2.png";
 import img3 from "../assets/blog/blog-3.png";
 
-const posts = [
+const POSTS = [
   {
     id: 1,
-    href: "/blog/what-is-crypto-trading",
-    category: "Crypto Trading",
-    title: "What is Crypto Trading? A Beginner’s Guide in Simple Words",
-    date: "Jan 9, 2025",
+    href: "/blog/automation-workflows",
+    category: "Growth",
+    title: "5 Automation Workflows to Boost Team Productivity",
+    excerpt:
+      "Explore five automation workflows that reduce repetitive tasks and help your team focus on meaningful work.",
     image: img1,
-    alt: "A terracotta pot plant against soft orange wall",
+    author: "Daniel Lee",
+    role: "Workflow Strategist",
+    date: "Jan 9, 2025",
   },
   {
     id: 2,
-    href: "/blog/how-to-start-crypto-trading",
-    category: "Beginner's guide",
-    title: "How to Start Crypto Trading: A Simple Beginner’s Guide",
-    date: "Jan 8, 2025",
+    href: "/blog/ai-support-response",
+    category: "Analytics",
+    title: "How AI Can Improve Customer Support Response Times",
     image: img2,
-    alt: "A red cup on cyan background casting a soft shadow",
+    date: "Jan 8, 2025",
   },
   {
     id: 3,
-    href: "/blog/cryptocurrency-digital-revolution",
-    category: "Cryptocurrency",
-    title: "Cryptocurrency: The Digital Revolution Reshaping Money",
-    date: "Jan 7, 2025",
+    href: "/blog/metrics-that-matter",
+    category: "Productivity",
+    title: "Metrics That Matter: Tracking SaaS Growth the Right Way",
     image: img3,
-    alt: "An orange bowl on warm background",
+    date: "Jan 7, 2025",
+  },
+  {
+    id: 4,
+    href: "/blog/data-driven-culture",
+    category: "Technology",
+    title: "Building a Data-Driven Culture in Your Team",
+    image: img3,
+    date: "Jan 6, 2025",
   },
 ];
 
-export default function Blog() {
+function Initials({ name }) {
+  const ii = name
+    .split(" ")
+    .map((s) => s[0])
+    .slice(0, 2)
+    .join("");
   return (
-    <section id="resources" className="bg-white py-20 sm:py-28 scroll-mt-nav">
+    <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 text-[12px] font-semibold text-neutral-700 ring-1 ring-black/5">
+      {ii}
+    </span>
+  );
+}
+
+export default function BlogListing() {
+  const featured = POSTS[0];
+  const cards = POSTS.slice(1, 4);
+
+  return (
+    <section id="blog" className="bg-transparent py-20 mb-0 sm:py-28 scroll-mt-nav">
       <div className="container-xxl">
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto">
-          <span className="inline-flex items-center gap-2 text-sm font-medium text-green-600">
-            <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-            Resources
-          </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900">
-            Resources & Insights
-          </h2>
-          <p className="mt-4 text-neutral-500">
-            Find the right guides, trading solutions, and beyond all that you need in order to maximize the outcome and trade wiser with Cryptomaty.
-          </p>
+        {/* ===== Header row (badge + heading | blurb + view all) ===== */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-4">
+          <div className="md:col-span-7">
+            <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs text-black font-semibold ring-2 ring-[#F6F6F9]">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#3B66F6]" />
+              Blog
+            </span>
+            <h2 className="mt-3 text-[34px] sm:text-[44px] leading-[1.15] font-semibold  tracking-tight text-neutral-900">
+              Insights to help your
+              <br className="hidden sm:block" /> team grow.
+            </h2>
+          </div>
+
+          <div className="md:col-span-5 flex md:items-end">
+            <div className="w-full text-left md:text-right">
+              <p className="text-[15px] text-neutral-600">
+                Powerful analytics, seamless
+                <br className="hidden md:block" />
+                integrations to keep work moving.
+              </p>
+              <Link
+                to="/blog"
+                className="mt-3 inline-flex items-center gap-1 text-[15px] font-semibold text-neutral-900 hover:opacity-80"
+              >
+                View all posts <span aria-hidden>→</span>
+              </Link>
+            </div>
+          </div>
         </div>
 
-        {/* Grid */}
-        <div className="mt-12 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((p) => (
-            <article key={p.id} className="group">
-              <Link to={p.href} className="block focus:outline-none">
-                <div className="overflow-hidden rounded-2xl border border-neutral-200">
-                  <img
-                    src={p.image}
-                    alt={p.alt}
-                    className="h-[220px] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                    loading="lazy"
-                  />
+        {/* ===== Featured card ===== */}
+        {featured && (
+          <article className="rounded-[18px] bg-white ring-5 ring-[#F6F6F9] shadow-[0_10px_30px_rgba(0,0,0,0.04)] overflow-hidden mb-8  mt-10 sm:mt-20">
+            <div className="grid grid-cols-1 lg:grid-cols-12 items-start ">
+
+              {/* left image */}
+              <div className="lg:col-span-5 flex items-center justify-center p-4">
+                <Link to={featured.href} className="block w-full h-full">
+                  <div className="rounded-2xl overflow-hidden w-full h-[95%] sm:h-[420px] lg:h-[460px]">
+                    <img
+                      src={featured.image}
+                      alt={featured.title}
+                      className="w-full h-full object-cover rounded-xl"
+                      loading="lazy"
+                    />
+                  </div>
+                </Link>
+              </div>
+
+
+              {/* right content */}
+              <div className="lg:col-span-7 p-5 sm:p-6">
+                <span className="inline-flex items-center rounded-full bg-[#EEF2FF] text-[#3B66F6] px-2 py-0.5 text-[11px] font-semibold">
+                  {featured.category}
+                </span>
+
+                <Link to={featured.href}>
+                  <h3 className="mt-2 text-[22px] sm:text-[44px] font-bold leading-snug text-neutral-900 hover:opacity-90">
+                    {featured.title}
+                  </h3>
+                </Link>
+
+                <p className="mt-2 text-[18px] text-neutral-600">{featured.excerpt}</p>
+
+                <div className="mt-16 sm:mt-44 flex items-center gap-3">
+                  <Initials name={featured.author} />
+                  <div className="text-sm">
+                    <div className="font-semibold text-neutral-900">
+                      {featured.author}
+                    </div>
+                    <div className="text-neutral-500">{featured.role}</div>
+                  </div>
                 </div>
-                <div className="mt-3">
-                  <span className="text-xs font-medium text-primary/90">{p.category}</span>
-                  <h3 className="mt-1 text-[17px] font-semibold leading-snug text-neutral-900 group-hover:underline">
+              </div>
+            </div>
+          </article>
+
+        )}
+
+        {/* ===== 3 small cards row ===== */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {cards.map((p) => (
+            <article
+              key={p.id}
+              className="rounded-[18px] bg-white ring-5 ring-[#F6F6F9] shadow-[0_10px_30px_rgba(0,0,0,0.04)] overflow-hidden"
+            >
+              <Link to={p.href} className="block">
+                {/* ✅ Image with padding */}
+                <div className="p-2 sm:p-2">
+                  <div className="overflow-hidden rounded-xl">
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      className="h-48 w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                {/* ✅ Content */}
+                <div className="px-5 sm:px-6 pb-5">
+                  <span className="inline-flex items-center rounded-full bg-[#EEF2FF] text-[#3B66F6] px-2 py-0.5 text-[11px] font-semibold">
+                    {p.category}
+                  </span>
+                  <h3 className="mt-2 text-[16.5px] font-semibold leading-snug text-neutral-900">
                     {p.title}
                   </h3>
                   <time
                     dateTime={new Date(p.date).toISOString().slice(0, 10)}
-                    className="mt-1 block text-xs text-neutral-500"
+                    className="mt-2 block text-xs text-neutral-500"
                   >
                     {p.date}
                   </time>
@@ -85,15 +185,6 @@ export default function Blog() {
           ))}
         </div>
 
-        {/* Footer CTA */}
-        <div className="mt-10 sm:mt-12 flex justify-center">
-          <Link
-            to="/blog"
-            className="inline-flex items-center gap-2 rounded-xl border border-neutral-200 px-5 py-2.5 text-sm font-semibold text-neutral-800 hover:border-neutral-300 hover:bg-neutral-50 transition-colors"
-          >
-            Explore resources →
-          </Link>
-        </div>
       </div>
     </section>
   );

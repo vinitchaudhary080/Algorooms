@@ -1,6 +1,7 @@
 // src/components/contact/ContactHero.jsx
 import React from "react";
 import Founderimg from "../../assets/founder.png";
+import contactImg from "@/assets/contact.png";
 
 export default function ContactHero() {
   return (
@@ -63,6 +64,42 @@ export default function ContactHero() {
         </div>
 
         {/* Right form */}
+        <div>
+  <div className="max-w-lg mx-auto">
+    <div className="bg-white rounded-2xl shadow p-6 sm:p-8 space-y-5 text-center">
+      
+      {/* Heading */}
+      <h2 className="text-2xl font-bold text-neutral-900">
+        🚀 Let's Grow Your Trading Journey
+      </h2>
+      <p className="text-sm text-neutral-600 mt-2 leading-relaxed">
+        Whether you're a beginner exploring algorithmic trading or an experienced trader 
+        looking to automate your strategies we’re here to help you every step of the way.
+      </p>
+
+      {/* Value points */}
+      <ul className="mt-4 space-y-2 text-sm text-neutral-700 text-left">
+        <li><span className="text-green-600 mt-1">✓</span> Personalized strategy consultation</li>
+        <li><span className="text-green-600 mt-1">✓</span> Help with broker integrations & automation</li>
+        <li><span className="text-green-600 mt-1">✓</span> AI screeners and performance tracking demo</li>
+      </ul>
+
+      {/* WhatsApp CTA */}
+      <div className="mt-6">
+        <a
+          href="https://wa.me/917049850866?text=Hi%20Cryptomaty%20Team!%20I%20want%20to%20learn%20more%20about%20your%20platform."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full inline-flex items-center justify-center rounded-lg bg-[#2864DF] hover:bg-[#0944BC] px-4 py-3 text-sm font-semibold text-white shadow transition"
+        >
+          Connect Now on WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
         {/* <div>
           <div className="max-w-lg mx-auto">
             <form className="bg-white rounded-2xl shadow p-6 sm:p-8 space-y-5">
@@ -113,6 +150,7 @@ export default function ContactHero() {
             </form>
           </div>
         </div> */}
+
       </div>
     </section>
   );

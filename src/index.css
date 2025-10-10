@@ -13,12 +13,16 @@
 
 
 /* Base styles */
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;     /* safety net */
+}
 
 
 @layer base {
 html { scroll-behavior: smooth; }
-body { @apply bg-white text-neutral-100 antialiased; }
+body { @apply text-neutral-100 antialiased;
+    background-color: #F6F6F8; }
 }
 
 

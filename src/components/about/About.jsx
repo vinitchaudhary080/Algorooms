@@ -2,8 +2,8 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import AboutHero from "@/components/about/AboutHero";
-import Mission from "@/components/about/Mission";
-import Values from "@/components/about/Values";
+import Counter from "@/components/about/Counter";
+import Benifit from "@/components/about/Benifit";
 import Founder from "@/components/about/Founder";
 import Team from "@/components/about/Team";
 import Footer from "@/sections/Footer";
@@ -21,12 +21,12 @@ export default function About() {
 
       {/* Mission - slide up */}
       <Reveal effect="fade-up">
-        <Mission />
+        <Counter />
       </Reveal>
 
       {/* Values - slight stagger feel ke liye delay */}
       <Reveal effect="fade-up">
-        <Values />
+        <Benifit />
       </Reveal>
 
       {/* Founder - left/right se thoda motion */}
