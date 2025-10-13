@@ -15,7 +15,7 @@ export default function FeaturesHero() {
 
         {/* Heading + subtext (exact copy style) */}
         <div className="mt-4 text-center">
-          <h1 className="text-[34px] sm:text-[44px] md:text-[52px] font-extrabold leading-tight tracking-tight text-neutral-900">
+          <h1 className="text-[40px] leading-[1.12] sm:text-6xl font-black  font-semibold  tracking-tight text-neutral-900">
             What’s New in Algorooms
           </h1>
 

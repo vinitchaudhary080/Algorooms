@@ -36,7 +36,7 @@ export default function Benefits() {
             Benefits
           </span>
 
-          <h2 className="mt-4 text-[28px] sm:text-[34px] font-semibold leading-tight tracking-tight text-neutral-900">
+          <h2 className="mt-4 text-4xl sm:text-5xl font-semibold leading-tight tracking-tight text-neutral-900">
             Benefits to keep your
             <br className="hidden sm:block" />
             team in sync.

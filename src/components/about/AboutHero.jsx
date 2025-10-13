@@ -16,7 +16,7 @@ export default function AboutHero() {
 
         {/* ===== Heading ===== */}
         <div className="mt-5 text-center">
-          <h1 className="text-[40px] leading-[1.12] sm:text-6xl font-black font-semibold tracking-tight text-neutral-900">
+          <h1 className="text-[40px] leading-[1.12] sm:text-6xl font-black  font-semibold tracking-tight text-neutral-900">
             Power{" "}
             <span className="inline-flex items-center align-middle">
               <img

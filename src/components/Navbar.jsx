@@ -26,20 +26,19 @@ export default function Navbar() {
 
   // desktop link styles
   const linkDesktop =
-    "px-3 py-2 text-[15px] font-medium text-neutral-500 hover:text-[#3B66F6]";
-  const linkActive = "text-[#3B66F6] font-semibold";
+    "px-3 py-2 text-[15px] font-medium text-neutral-500 hover:text-[#2048FE]";
+  const linkActive = "text-[#2048FE] font-semibold"; // 💙 active tab color changed here
 
   return (
     <header
-  className="
-    sticky top-0 z-50
-    bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60
-    relative
-    after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0
-    after:h-[1px] after:bg-[#F6F6F9]
-  "
->
-
+      className="
+        sticky top-0 z-50
+        bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60
+        relative
+        after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0
+        after:h-[1px] after:bg-[#F6F6F9]
+      "
+    >
       <div className="container-xxl">
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -80,7 +79,7 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center gap-2 rounded-2xl px-5 py-3 text-[15px] font-semibold text-neutral-900 ring-2 ring-[#F0F0F0]  hover:shadow transition-all hover:bg-white/70"
+              className="inline-flex items-center gap-2 rounded-2xl px-5 py-3 text-[15px] font-semibold text-neutral-900 ring-2 ring-[#F0F0F0] hover:shadow transition-all hover:bg-white/70"
             >
               Contact <ChevronRight className="h-4 w-4" />
             </Link>
@@ -92,7 +91,7 @@ export default function Navbar() {
                 rounded-2xl
                 px-5 py-3
                 text-[15px] font-semibold text-white
-                bg-gradient-to-r from-[#3B66F6] to-[#1E4CEA]
+                bg-gradient-to-r from-[#2048FE] to-[#1E4CEA]
                 shadow-[0_10px_30px_rgba(40,100,223,0.35)]
                 border-3 border-[#6C88FF]
                 transition-all
@@ -118,7 +117,9 @@ export default function Navbar() {
 
       {/* ===== Mobile Drawer ===== */}
       <div
-        className={`md:hidden fixed inset-0 z-[60] transition-[opacity] ${open ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        className={`md:hidden fixed inset-0 z-[60] transition-[opacity] ${
+          open ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
         aria-hidden={!open}
       >
         {/* Backdrop */}
@@ -131,13 +132,14 @@ export default function Navbar() {
         <aside
           id="mobile-drawer"
           className={`absolute right-0 top-0 h-screen w-[86%] max-w-[360px]
-                      translate-x-full bg-white z-[61] shadow-2xl ring-1 ring-black/5
-                      transition-transform duration-300 ease-out
-                      ${open ? "!translate-x-0" : ""}`}
+            translate-x-full bg-white z-[61] shadow-2xl ring-1 ring-black/5
+            transition-transform duration-300 ease-out
+            ${open ? "!translate-x-0" : ""}
+          `}
           role="dialog"
           aria-modal="true"
         >
-          {/* Top row: logo left + bordered close right */}
+          {/* Top row */}
           <div className="flex items-center justify-between px-4 py-4">
             <Link
               to="/"
@@ -156,9 +158,8 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Centered content like reference */}
+          {/* Menu items */}
           <div className="flex h-[calc(100vh-64px)] flex-col items-center justify-start pt-2">
-            {/* Menu items */}
             <nav className="w-full">
               <ul className="flex flex-col items-center gap-4 mt-4">
                 {navItems.map((it) => (
@@ -170,9 +171,10 @@ export default function Navbar() {
                         onClick={() => setOpen(false)}
                         className={({ isActive }) =>
                           [
-                            // reference-style big clean links
                             "block text-center py-3 text-[20px] sm:text-[22px] font-medium tracking-tight",
-                            isActive ? "text-[#3B66F6]" : "text-neutral-900 hover:text-neutral-700",
+                            isActive
+                              ? "text-[#2048FE]" // 💙 mobile active color
+                              : "text-[#2048FE] hover:text-neutral-700",
                           ].join(" ")
                         }
                       >
@@ -192,9 +194,8 @@ export default function Navbar() {
               </ul>
             </nav>
 
-            {/* Buttons — centered like reference */}
+            {/* Buttons */}
             <div className="mt-6 w-full max-w-[260px] flex flex-col items-center gap-3">
-              {/* Contact pill (white with subtle ring/shadow) */}
               <Link
                 to="/contact"
                 onClick={() => setOpen(false)}
@@ -203,13 +204,12 @@ export default function Navbar() {
                 Contact <ChevronRight className="h-4 w-4" />
               </Link>
 
-              {/* Get Started gradient pill (blue glow) */}
               <a
                 href="#"
                 className="
                   w-full inline-flex items-center justify-center gap-2
                   rounded-2xl px-5 py-3 text-[15px] font-semibold text-white
-                  bg-gradient-to-r from-[#3B66F6] to-[#1E4CEA]
+                  bg-gradient-to-r from-[#2048FE] to-[#1E4CEA]
                   shadow-[0_10px_30px_rgba(40,100,223,0.35)]
                   border-3 border-[#6C88FF]
                   transition-all

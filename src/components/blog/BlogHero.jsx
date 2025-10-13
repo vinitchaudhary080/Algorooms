@@ -1,32 +1,29 @@
+// src/components/blog/BlogHero.jsx
 import React from "react";
-import { NotebookPen } from "lucide-react";
 
 export default function BlogHero() {
   return (
-    <section
-      className="py-16 sm:py-24"
-      style={{ background: "#F6F7F9" }} // light gray jaisa screenshot me
-    >
-      <div className="container-xxl">
-        <div className="text-center max-w-3xl mx-auto">
-          {/* Badge */}
-          <span className="inline-flex items-center gap-2 text-sm font-medium text-green-600">
-            <span className="inline-flex h-5 w-5 items-center justify-center rounded-full ring-1 ring-green-600/30 bg-white">
-              <NotebookPen className="h-3.5 w-3.5 text-green-600" />
-            </span>
-             Blog & Insights
-          </span>
+    <section className="bg-[#F6F6F8] py-16 sm:py-20 scroll-mt-nav">
+      <div className="container-xxl text-center">
+        {/* Badge */}
+        <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-semibold text-neutral-900 ring-2 ring-[#F6F6F9]">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#3B66F6]" />
+          Blog
+        </span>
 
-          {/* Title */}
-          <h1 className="mt-4 text-[44px] sm:text-6xl font-semibold tracking-tight text-neutral-900">
-            Stay Ahead of the Market
-          </h1>
+        {/* Heading */}
+        <h1 className="mt-4 text-[40px] leading-[1.12] sm:text-6xl font-black font-semibold tracking-tight text-neutral-900">
+          Smart insights to guide
+          <br className="hidden sm:block" />
+          your growth journey.
+        </h1>
 
-          {/* Subtext */}
-          <p className="mt-4 text-base sm:text-lg text-neutral-500">
-            Explore expert tips, market trends, and trading strategies - delivered to help you trade smarter each and every day.
-          </p>
-        </div>
+        {/* Subtext */}
+        <p className="mt-3 max-w-xl mx-auto text-[14.5px] sm:text-[15px] text-neutral-600">
+          Learn from expert perspectives, real-world
+          <br className="hidden sm:block" />
+          examples, and practical advices.
+        </p>
       </div>
     </section>
   );

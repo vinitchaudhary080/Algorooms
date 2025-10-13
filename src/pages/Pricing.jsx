@@ -3,7 +3,8 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/sections/Footer";
 import PricingHero from "@/components/pricing/PricingHero";
-
+import Listing from "@/components/pricing/Listing";
+import Compare from "@/components/pricing/PriceCompare";
 import FAQ from "@/sections/FAQ";
 import Reveal from "@/components/Reveal"; // 👈 add
 
@@ -16,30 +17,17 @@ export default function PricingPage() {
       <Reveal effect="zoom" duration={700}>
         <PricingHero />
       </Reveal>
-
-      {/* Listed / Mosaic – slide up */}
-      <Reveal effect="fade-up" duration={650}>
-        <Feature1 />
-      </Reveal>
-       <Reveal effect="fade-up" duration={650}>
-        <Feature2 />
-      </Reveal>
-       <Reveal effect="fade-up" duration={650}>
-        <Feature3 />
-      </Reveal>
-      <Reveal effect="fade-up" duration={650}>
-        <Feature4 />
+       <Reveal effect="zoom" duration={700}>
+        <Listing />
       </Reveal>
 
-      {/* How it works – fade-up */}
-      <Reveal effect="fade-up" duration={650}>
-        <HowItWorks />
+       <Reveal effect="zoom" duration={700}>
+        <Compare />
       </Reveal>
 
-      {/* Why choose – right se halka motion */}
-      <Reveal effect="fade-right" duration={700}>
-        <WhyChoose />
-      </Reveal>
+    
+
+  
 
       {/* FAQ – simple fade-up */}
       <Reveal effect="fade-up" duration={650}>

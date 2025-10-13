@@ -27,9 +27,9 @@ export default function App() {
        <Route path="/contact" element={<Contact />} /> 
        <Route path="/features" element={<FeaturesPage />} />
         <Route path="/pricing" element={<PricingPage />} />
-      <Route path="/terms" element={<Terms />} />
+       <Route path="/terms" element={<Terms />} />
        <Route path="/privacy" element={<Privacy />} />
-       <Route path="/blog/what-is-crypto-trading" element={<CodeDetail />} />
+      <Route path="/blog/automation-workflows" element={<CodeDetail />} />
       <Route path="/blog/how-to-start-crypto-trading" element={<StratCrypto />} />
       <Route path="/blog/cryptocurrency-digital-revolution" element={<Cryptocurrency />}/>
       <Route path="/blog/blockchain-force-transforming" element={<Blockchain />}/>
