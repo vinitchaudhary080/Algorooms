@@ -6,15 +6,15 @@ import coverImg from "@/assets/blog/blog-1.png";
 export default function CodeDetailHero({
   backTo = "/blog",
   category = "Growth",
-  title = "5 Automation Workflows to Boost Team Productivity",
-  excerpt = "Explore five automation workflows that reduce repetitive tasks and help your team focus on meaningful work.",
+  title = "What Is Algo Trading Software and Why It Matters",
+  excerpt = "In today’s fast-moving financial markets, every second counts. Traditional manual trading is slowly being replaced by something faster, smarter, and far more efficient Algo Trading Software. But what exactly is it, and why does it matter so much in today’s trading ecosystem?",
   author = { name: "Daniel Lee", role: "Workflow Strategist" },
   date = "Oct 13, 2025",
   hero = coverImg,
   avatar = null, // optional avatar image
 }) {
   return (
-    <section className="bg-[#F6F6F8] py-12 sm:py-16 scroll-mt-nav">
+    <section className="bg-[#F6F6F8] py-12 sm:py-24 scroll-mt-nav">
       <div className="container-xxl max-w-4xl mx-auto">
         {/* Top row: Back + Category */}
         <div className="flex items-center justify-between">

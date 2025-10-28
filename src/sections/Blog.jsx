@@ -74,17 +74,17 @@ export default function BlogListing() {
               Blog
             </span>
             <h2 className="mt-3 text-[34px] sm:text-[44px] leading-[1.15] font-semibold  tracking-tight text-neutral-900">
-              Insights to help your
-              <br className="hidden sm:block" /> team grow.
+              Insights to Fuel Your
+              <br className="hidden sm:block" /> Team’s Growth
             </h2>
           </div>
 
           <div className="md:col-span-5 flex md:items-end">
             <div className="w-full text-left md:text-right">
               <p className="text-[15px] text-neutral-600">
-                Powerful analytics, seamless
+                Data-driven tips, smooth integrations, 
                 <br className="hidden md:block" />
-                integrations to keep work moving.
+                and practical strategies to keep your workflow moving effortlessly.
               </p>
               <Link
                 to="/blog"

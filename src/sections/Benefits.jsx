@@ -12,33 +12,33 @@ import {
 const BENEFITS = [
   {
     icon: BarChart3,
-    title: "Real-time Analytics",
-    desc: "Track every metric live and make faster decisions.",
+    title: "Real-time Market Advantage",
+    desc: "Make faster moves with a real-time trading system that updates trades as markets shift.",
   },
   {
     icon: Users2,
-    title: "Collaboration Tools",
-    desc: "Keep your team aligned with shared dashboards.",
+    title: "Smarter Strategy Building",
+    desc: "Build and test trading plans efficiently using a backtesting tool designed for accuracy and ease.",
   },
   {
     icon: Sparkles,
-    title: "AI-Powered Insights",
-    desc: "Get smarter recommendations to boost performance.",
+    title: "Simplified Trade Management",
+    desc: "Handle everything  from setup to execution within a unified algorithmic trading platform.",
   },
   {
     icon: Plug,
-    title: "Custom Integrations",
-    desc: "Connect with your favorite tools effortlessly and quickly.",
+    title: "AI-Based Performance Boost",
+    desc: "Use AI trading software insights to fine-tune strategies and improve consistency in results.",
   },
   {
     icon: Layers,
-    title: "Scalable Architecture",
-    desc: "Built to grow with your business at every stage.",
+    title: "Scalable Growth Support",
+    desc: "Grow smoothly from beginner to pro level with an adaptable automated trading platform.",
   },
   {
     icon: MessageCircle,
-    title: "24/7 Support",
-    desc: "Help whenever you need it, day or night.",
+    title: "Reliable 24/7 Support",
+    desc: "Get continuous assistance so your trades stay active without interruptions.",
   },
 ];
 
@@ -53,8 +53,8 @@ export default function Benefits() {
             Benefits
           </span>
           <h2 className="mt-4 text-4xl sm:text-5xl font-semibold  leading-tight tracking-tight text-neutral-900">
-            Benefits to keep your <br className="hidden sm:block" />
-            team in sync.
+            Benefits to Keep Your <br className="hidden sm:block" />
+            Trading in Sync.
           </h2>
         </div>
 

@@ -126,7 +126,7 @@ Email: support@cryptomaty.com`,
 
 export default function TermsContent() {
   return (
-    <section className="bg-white py-16 sm:py-24">
+    <section className="bg-[#F6F6F8] pt-0 sm:pt-0 pb-16 sm:pb-24">
       <div className="container-xxl">
         <div className="mx-auto max-w-3xl text-[15px] leading-7 text-neutral-700">
           <ol className="space-y-10">

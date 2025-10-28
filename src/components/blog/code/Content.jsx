@@ -4,85 +4,129 @@ import React from "react";
 // (agar share icons chahiye hon to later add kar denge)
 export default function CodeDetailContent() {
   return (
-    <section className="bg-[#F6F6F8] pt-10 pb-16 sm:pt-12 sm:pb-24">
+    <section className="bg-[#F6F6F8] pt-1 pb-16 sm:pt-0 sm:pb-24">
       <div className="container-xxl">
         <article className="mx-auto max-w-3xl text-[15.5px] leading-7 text-neutral-700">
-          {/* Intro (top paragraph) */}
-          <p className="text-neutral-600">
-            Automation isn’t just a buzzword — it’s a proven way to help teams work
-            smarter. By removing repetitive tasks from daily operations, teams gain more
-            time to focus on strategy, creativity, and customer value. In this article,
-            we’ll cover five practical automation workflows that can make an immediate
-            impact on your productivity.
+          {/* H1 */}
+          <h1 className="text-[30px] sm:text-[38px] font-extrabold leading-tight tracking-tight text-neutral-900">
+            Understanding Algo Trading Software
+          </h1>
+
+          {/* Intro */}
+          <p className="mt-4 text-neutral-600">
+            Algo Trading Software, also known as algorithmic trading software, is a
+            system that uses predefined mathematical models and rules to execute trades
+            automatically. These rules are based on factors like price, timing, volume,
+            and market conditions. Once a strategy is set, the software can make buy or
+            sell decisions on behalf of the trader without emotions, delays, or manual
+            errors. This approach, called trading automation, helps traders stay
+            consistent and disciplined.
           </p>
 
-          {/* H2: section title */}
+          {/* How it works */}
           <h2 className="mt-10 text-[28px] sm:text-[36px] font-extrabold leading-tight tracking-tight text-neutral-900">
-            Automate Task Assignments
+            How Does It Work?
           </h2>
           <p className="mt-3 text-neutral-600">
-            Manually assigning tasks often leads to delays and confusion. Automation can
-            instantly assign tasks based on predefined rules, such as team roles, project
-            type, or workload. This ensures no task is left behind and the right person
-            always gets notified without manual follow-ups.
+            At its core, an algo trading platform combines powerful market analysis
+            algorithms with real-time market data. Here is the typical flow:
           </p>
-
-          <h2 className="mt-12 text-[28px] sm:text-[36px] font-extrabold leading-tight tracking-tight text-neutral-900">
-            Streamline Reporting and Analytics
-          </h2>
-          <p className="mt-3 text-neutral-600">
-            Creating weekly or monthly reports can be time-consuming. With automated
-            reporting, data is collected and visualized in real time — keeping everyone
-            aligned without extra effort. Teams can monitor KPIs, track progress, and
-            make informed decisions faster.
-          </p>
-
-          <h2 className="mt-12 text-[28px] sm:text-[36px] font-extrabold leading-tight tracking-tight text-neutral-900">
-            Simplify Customer Onboarding
-          </h2>
-          <p className="mt-3 text-neutral-600">
-            A strong first impression is critical for customer retention. Automated
-            onboarding sequences — welcome emails, product tours, and setup reminders —
-            help new users get value quickly, without requiring constant manual input
-            from your team.
-          </p>
-
-          {/* Example list block */}
-          <h2 className="mt-12 text-[28px] sm:text-[36px] font-extrabold leading-tight tracking-tight text-neutral-900">
-            Quick Wins You Can Set Up Today
-          </h2>
           <ul className="mt-4 space-y-2 list-disc pl-5 text-neutral-700">
-            <li>Auto-assign tickets based on priority or topic.</li>
-            <li>Weekly status summary sent to Slack at 5pm Friday.</li>
-            <li>Auto-tag incoming leads and route to the right owner.</li>
-            <li>Send NPS survey after support ticket is resolved.</li>
+            <li>
+              <span className="font-semibold">Strategy Creation:</span> Build custom
+              strategies using an algo strategy builder or a no-code strategy builder,
+              so both coders and non-coders can participate.
+            </li>
+            <li>
+              <span className="font-semibold">Backtesting:</span> Test the strategy on
+              historical data with a backtesting tool to measure performance before
+              risking capital.
+            </li>
+            <li>
+              <span className="font-semibold">Automation:</span> After validation, run
+              the strategy on a real-time trading system with order execution software,
+              so trades fire the moment conditions are met.
+            </li>
           </ul>
 
-          {/* Soft note card */}
-          <figure className="mt-8 rounded-2xl bg-white ring-1 ring-black/5 p-5">
-            <blockquote className="text-neutral-800">
-              <span className="font-semibold text-neutral-900">Tip:</span>{" "}
-              start small. Pick one repetitive workflow, automate it end-to-end, then
-              expand from there.
-            </blockquote>
-          </figure>
-
+          {/* Why it matters */}
           <h2 className="mt-12 text-[28px] sm:text-[36px] font-extrabold leading-tight tracking-tight text-neutral-900">
-            Reduce Manual Approvals
+            Why Algo Trading Matters
           </h2>
-          <p className="mt-3 text-neutral-600">
-            Replace ad-hoc approvals with conditional rules. For example, approvals under
-            a threshold can auto-pass, while higher-value items escalate to a manager.
-            This cuts wait time dramatically and keeps momentum high.
+
+          <h3 className="mt-6 text-[20px] sm:text-[22px] font-semibold text-neutral-900">
+            1. Speed and Accuracy
+          </h3>
+          <p className="mt-2 text-neutral-600">
+            Automated trading software can process thousands of data points and execute
+            trades in milliseconds. Human traders cannot match that speed or precision.
           </p>
 
+          <h3 className="mt-6 text-[20px] sm:text-[22px] font-semibold text-neutral-900">
+            2. Emotion-Free Decisions
+          </h3>
+          <p className="mt-2 text-neutral-600">
+            Rules and data drive execution. That reduces fear, greed, and hesitation,
+            which often damage results.
+          </p>
+
+          <h3 className="mt-6 text-[20px] sm:text-[22px] font-semibold text-neutral-900">
+            3. Backtesting and Optimization
+          </h3>
+          <p className="mt-2 text-neutral-600">
+            Built-in backtesting tools let traders refine ideas before going live,
+            saving time and capital.
+          </p>
+
+          <h3 className="mt-6 text-[20px] sm:text-[22px] font-semibold text-neutral-900">
+            4. Accessibility
+          </h3>
+          <p className="mt-2 text-neutral-600">
+            Advanced algo trading software in India is now available to retail traders,
+            not just institutions.
+          </p>
+
+          {/* Markets */}
           <h2 className="mt-12 text-[28px] sm:text-[36px] font-extrabold leading-tight tracking-tight text-neutral-900">
-            Keep Your Team in Sync
+            Algo Trading Across Markets
           </h2>
           <p className="mt-3 text-neutral-600">
-            Use automated notifications to keep everyone aligned — meeting reminders,
-            handoff checklists, or “done” summaries after a sprint. Less chaos, more
-            clarity.
+            Algo trading works across multiple asset classes.
+          </p>
+          <ul className="mt-4 space-y-2 list-disc pl-5 text-neutral-700">
+            <li>
+              <span className="font-semibold">Equities:</span> Stock trading automation
+              helps capture quick opportunities and react faster to price changes.
+            </li>
+            <li>
+              <span className="font-semibold">Currencies:</span> A forex trading bot
+              can execute instantly with minimal lag, so even small fluctuations are
+              actionable.
+            </li>
+          </ul>
+          <p className="mt-3 text-neutral-600">
+            This flexibility across assets makes algorithmic trading a must-have for
+            active traders.
+          </p>
+
+          {/* Choosing platform */}
+          <h2 className="mt-12 text-[28px] sm:text-[36px] font-extrabold leading-tight tracking-tight text-neutral-900">
+            Choosing the Right Platform
+          </h2>
+          <p className="mt-3 text-neutral-600">
+            When evaluating an algo trading platform in India, prioritize these features:
+          </p>
+          <ul className="mt-4 space-y-2 list-disc pl-5 text-neutral-700">
+            <li>Customizable strategy builder, ideally no-code.</li>
+            <li>AI trading software integration for predictive insights.</li>
+            <li>Support for a multi-asset algo platform.</li>
+            <li>Real-time data feeds and automated order execution.</li>
+            <li>Paper trading options for risk-free testing.</li>
+          </ul>
+          <p className="mt-3 text-neutral-600">
+            Focus on reliability, transparency, and support quality. Flashy dashboards
+            do not compensate for weak execution, poor uptime, or limited broker
+            integrations.
           </p>
 
           {/* Closing */}
@@ -90,9 +134,11 @@ export default function CodeDetailContent() {
             Final Thoughts
           </h3>
           <p className="mt-3 text-neutral-600">
-            Automation frees up time for meaningful work. Start with one workflow,
-            measure the impact, and iterate. Over time, these small improvements compound
-            into a faster, clearer, and more resilient team.
+            Algorithmic trading has changed how participants engage with markets.
+            The right advanced algo trading software can improve efficiency, accuracy,
+            and profitability. As markets evolve, automation is moving from advantage
+            to necessity. The edge belongs to traders who combine human judgment with
+            algorithmic precision.
           </p>
         </article>
       </div>

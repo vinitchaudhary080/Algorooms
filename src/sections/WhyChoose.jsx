@@ -14,9 +14,9 @@ import {
 const FEATURES = [
   { label: "Customised Strategy", icon: Settings2 },
   { label: "1-Click Deployed", icon: Zap },
-  { label: "Strategies Template", icon: ClipboardList },
-  { label: "Backtest", icon: BarChart2 },
-  { label: "Broker-wise Report", icon: FileChartColumn },
+  { label: "Strategy Templates", icon: ClipboardList },
+  { label: "Backtest Tool", icon: BarChart2 },
+  { label: "Broker-wise Reports", icon: FileChartColumn },
 ];
 
 export default function WhyChoose() {
@@ -27,16 +27,15 @@ export default function WhyChoose() {
         <div>
           <div className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs text-black font-semibold ring-2 ring-[#F6F6F9]">
             <span className="h-2 w-2 rounded-full bg-[#3B66F6]" />
-            Why Algorooms stands out
+            Why Algorooms Leads the Way
           </div>
 
           <h2 className="mt-4 text-[34px] sm:text-5xl font-semibold  leading-tight tracking-tight text-neutral-900">
-            The better way to <br /> launch and grow.
+            The smarter way to <br /> launch and grow.
           </h2>
 
           <p className="mt-4 max-w-md text-neutral-600">
-            All-in-one setup, no hidden fees, and smooth customization — everything
-            you need to launch faster.
+            Everything you need in one place easy setup, full transparency, and seamless customization to get you started faster.
           </p>
 
           <div className="mt-6">
@@ -56,7 +55,7 @@ export default function WhyChoose() {
     hover:scale-[1.02]
   "
 >
-  Switch to Algorooms <ChevronRight className="h-4 w-4" />
+  Let’s Begin with Algorooms <ChevronRight className="h-4 w-4" />
 </a>
 
           </div>

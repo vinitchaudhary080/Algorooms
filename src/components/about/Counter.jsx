@@ -77,10 +77,10 @@ export default function CounterSection() {
 
         {/* Stats */}
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <Stat from={0} to={2010} label="Year founded" start={start} duration={1600} />
-          <Stat from={0} to={15} suffix="+" label="Broker" start={start} duration={1600} />
-          <Stat from={0} to={25} suffix="K" label="Users" start={start} duration={1600} />
-          <Stat from={0} to={25} suffix="K" label="Users" start={start} duration={1600} />
+          <Stat from={0} to={2010} label="Integrated Brokers" start={start} duration={1600} />
+          <Stat from={0} to={15} suffix="K+" label="Algo Strategies Created" start={start} duration={1600} />
+          <Stat from={0} to={25} suffix="K+" label="Trades Automated" start={start} duration={1600} />
+          <Stat from={0} to={99} suffix="%" label="Execution Accuracy" start={start} duration={1600} />
         </div>
       </div>
     </section>

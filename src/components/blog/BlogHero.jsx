@@ -13,16 +13,16 @@ export default function BlogHero() {
 
         {/* Heading */}
         <h1 className="mt-4 text-[40px] leading-[1.12] sm:text-6xl font-black font-semibold tracking-tight text-neutral-900">
-          Smart insights to guide
+          Insights to Fuel Your 
           <br className="hidden sm:block" />
-          your growth journey.
+         Team’s Growth
         </h1>
 
         {/* Subtext */}
         <p className="mt-3 max-w-xl mx-auto text-[14.5px] sm:text-[15px] text-neutral-600">
-          Learn from expert perspectives, real-world
+          Data-driven tips, smooth integrations, and practical strategies to keep your workflow moving effortlessly.
           <br className="hidden sm:block" />
-          examples, and practical advices.
+          
         </p>
       </div>
     </section>

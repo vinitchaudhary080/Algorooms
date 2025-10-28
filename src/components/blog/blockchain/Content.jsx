@@ -6,103 +6,112 @@ export default function Blockchain() {
     <section className="bg-white pt-10 pb-16 sm:pt-12 sm:pb-20">
       <div className="container-xxl">
         <article className="mx-auto max-w-3xl text-[15px] leading-7 text-neutral-700">
+          {/* H1 */}
+          <h1 className="text-[28px] sm:text-[36px] font-extrabold text-neutral-900 leading-tight">
+            What Are Trading Bots?
+          </h1>
+
           {/* Intro */}
-          <p className="text-neutral-700">
-            In the world of finance, trust and transparency are everything. Investors depend on accurate records,
-            smooth settlements, and a system that protects their hard-earned money. But traditional methods of
-            record-keeping are slow, expensive, and sometimes even vulnerable to fraud. Enter <span className="font-semibold text-neutral-900">Blockchain</span> –
-            a technology quietly rewriting the rules of finance and poised to redefine how the stock market works.
+          <p className="mt-4">
+            A trading bot is software that executes trades automatically based on predefined conditions.
+            It follows mathematical models and rules, for example price movement, technical indicators, or volume patterns,
+            to buy or sell assets at the right time. These systems are powered by market analysis algorithms and can be
+            customized to match your style. Whether you trade intraday or invest long term, bots bring automation,
+            precision, and consistency to every decision.
           </p>
 
-          {/* Beyond buzzwords */}
-          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">A Technology Beyond Buzzwords</h2>
-          <p className="mt-2">
-            For many, “blockchain” sounds like a fancy tech term linked only to cryptocurrencies. But its scope is far wider.
-            Blockchain isn’t just about Bitcoin or digital tokens—it’s about creating a system of trust without depending on a single authority.
-            In a space like the stock market, where billions of rupees move every day, this is nothing short of revolutionary.
-          </p>
-
-          {/* What exactly is blockchain */}
-          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">What Exactly is Blockchain?</h2>
-          <p className="mt-2">
-            Think of blockchain as a shared digital diary that cannot be erased or rewritten. Instead of one authority holding the diary,
-            copies are stored across thousands of computers globally. Every new entry (a “block”) gets locked in and linked to the previous ones,
-            creating a chain—permanent, transparent, and secure.
-          </p>
-          <p className="mt-2">
-            This means once a transaction is recorded, it cannot be tampered with. For investors, this isn’t just technology—it’s trust in action.
-          </p>
-
-          {/* Why should investors care */}
-          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">Why Should Investors Care?</h2>
-          <p className="mt-2">
-            The stock market is built on transactions: buying, selling, clearing, and settling trades. Today, this process involves brokers,
-            exchanges, banks, and regulators—multiple steps that take time and add cost. Blockchain has the power to simplify all of this:
-          </p>
-          <ul className="mt-3 list-disc pl-5 space-y-1.5">
-            <li>
-              <span className="font-semibold">Lightning-fast settlements —</span> No more waiting for T+1 delays. With blockchain, settlements can be near-instant.
-            </li>
-            <li>
-              <span className="font-semibold">Transparent records —</span> Everyone on the network sees the same verified data, cutting down disputes.
-            </li>
-            <li>
-              <span className="font-semibold">Lower costs —</span> Removing unnecessary intermediaries reduces fees and processing charges.
-            </li>
-          </ul>
-          <p className="mt-2">In short, blockchain can make markets faster, fairer, and more efficient.</p>
-
-          {/* Blockchain meets stock market */}
-          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">Blockchain Meets the Stock Market</h2>
-          <p className="mt-2">
-            Around the world, exchanges are experimenting with blockchain. Imagine:
-          </p>
-          <ul className="mt-3 list-disc pl-5 space-y-1.5">
-            <li>
-              <span className="font-semibold">Real-time settlements in India —</span> Instead of waiting, funds and shares appear instantly in your account.
-            </li>
-            <li>
-              <span className="font-semibold">Fraud-proof trading —</span> Fake certificates or manipulated records could become history.
-            </li>
-            <li>
-              <span className="font-semibold">Tokenized assets —</span> Own a fraction of real estate, art, or commodities, traded just like shares.
-            </li>
-          </ul>
-          <p className="mt-2">
-            This isn’t science fiction. Exchanges in countries like Switzerland and Australia are piloting blockchain for clearing and settlement.
-            Even Indian regulators are evaluating how blockchain could strengthen investor confidence.
-          </p>
-
-          {/* What it means for retail */}
+          {/* How do they work */}
           <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
-            What Does This Mean for You as an Investor?
+            How Do Trading Bots Work?
           </h2>
-          <p className="mt-2">For retail investors, the benefits are clear:</p>
-          <ul className="mt-3 list-disc pl-5 space-y-1.5">
-            <li><span className="font-semibold">Speed —</span> Faster access to funds and shares.</li>
-            <li><span className="font-semibold">Security —</span> Transactions that are nearly impossible to tamper with.</li>
-            <li><span className="font-semibold">Accessibility —</span> Diversify into new asset classes through tokenization.</li>
+          <p className="mt-2">The flow is simple and powerful:</p>
+          <ul className="mt-3 list-disc pl-5 space-y-2">
+            <li>
+              <span className="font-semibold">Strategy Design:</span> Create your logic with an algo strategy builder
+              or a no-code strategy builder.
+            </li>
+            <li>
+              <span className="font-semibold">Testing:</span> Use a backtesting tool to check performance on historical
+              data and tune parameters.
+            </li>
+            <li>
+              <span className="font-semibold">Execution:</span> After validation, connect order execution software to a
+              real-time trading system so trades fire instantly when conditions are met.
+            </li>
           </ul>
-          <p className="mt-2">In a market where every second counts, blockchain offers a real competitive edge.</p>
+          <p className="mt-2">It becomes a continuous loop of learning, testing, and refining, fully automated.</p>
 
-          {/* Looking ahead */}
-          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">Looking Ahead: The Road to Transformation</h2>
+          {/* AI power */}
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
+            The Power of AI in Trading Bots
+          </h2>
           <p className="mt-2">
-            Like every major technological shift, blockchain adoption will take time. Systems must align, regulators must adapt, and infrastructure must evolve.
-            But the direction is certain: the future of the stock market will be powered by blockchain.
+            The next generation uses AI trading software that learns from data instead of only following fixed rules.
+            These systems analyze large data streams, detect hidden patterns, adapt to changing conditions, and move
+            traders from reactive to predictive execution.
           </p>
-          <figure className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-5">
-            <blockquote className="text-neutral-800">
-              As Warren Buffet once said, “Risk comes from not knowing what you’re doing.”
-              Understanding blockchain today prepares investors for the opportunities it will create tomorrow.
-            </blockquote>
-          </figure>
 
-          {/* Closing note */}
-          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">Closing Note for Investors</h2>
+          {/* Types */}
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">Types of Trading Bots</h2>
+          <ul className="mt-3 list-disc pl-5 space-y-2">
+            <li>
+              <span className="font-semibold">Equity Bots:</span> Stock trading automation based on indicators, volume,
+              and sentiment inputs.
+            </li>
+            <li>
+              <span className="font-semibold">Forex Bots:</span> Currency strategies that can run 24x7 and react to
+              global moves instantly.
+            </li>
+            <li>
+              <span className="font-semibold">Multi-Asset Bots:</span> On advanced algo trading platforms in India,
+              manage multiple asset classes together for better diversification.
+            </li>
+          </ul>
+
+          {/* Benefits */}
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">Benefits of Using Trading Bots</h2>
+          <ul className="mt-3 list-disc pl-5 space-y-2">
+            <li>
+              <span className="font-semibold">Speed:</span> Execution in milliseconds.
+            </li>
+            <li>
+              <span className="font-semibold">Emotion-Free Trading:</span> No panic, no greed, just rules and results.
+            </li>
+            <li>
+              <span className="font-semibold">Consistency:</span> The system behaves exactly as planned.
+            </li>
+            <li>
+              <span className="font-semibold">Scalability:</span> Manage multiple strategies and markets at once.
+            </li>
+          </ul>
+          <p className="mt-2">In short, bots make trading efficient, scalable, and smarter.</p>
+
+          {/* India adoption */}
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
+            The Indian Landscape: Automation on the Rise
+          </h2>
           <p className="mt-2">
-            Blockchain is not just a trend—it’s a force shaping the future of finance. For the stock market, it represents speed, safety, and inclusivity.
-            The investors who recognize this shift early will be better positioned to ride the wave when blockchain becomes the backbone of global markets.
+            Adoption of algorithmic trading software and automated trading solutions is accelerating in India.
+            Individuals and fintech teams are using automation to capture more opportunities with better discipline.
+            With simple dashboards and real-time analytics, even beginners can operate like professionals using a
+            leading algo trading app.
+          </p>
+
+          {/* Future */}
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
+            The Future: Where Automation Meets Intelligence
+          </h2>
+          <p className="mt-2">
+            As markets grow more complex, the edge will come from combining automation with artificial intelligence.
+            Expect advanced algo trading software that executes, learns, adapts, and improves continuously.
+          </p>
+
+          {/* Closing */}
+          <h3 className="mt-8 text-[16px] font-semibold text-neutral-900">Final Take</h3>
+          <p className="mt-2">
+            Trading bots blend technology with strategy. They bring speed, structure, and scale, so you focus on ideas
+            while the system handles execution. As automation evolves, the line between human insight and machine
+            precision will blur, creating a smarter, faster, and more efficient path for traders.
           </p>
         </article>
       </div>

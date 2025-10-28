@@ -14,7 +14,7 @@ export default function ContactHero() {
 
         {/* Heading */}
         <h1 className="mt-4 text-[40px] leading-[1.12] sm:text-6xl font-black  font-semibold  leading-tight tracking-tight text-neutral-900">
-          Power{" "}
+          Algorooms{" "}
           <span className="inline-flex items-center align-middle">
             <img
               src={powerBlueIcon}
@@ -23,17 +23,18 @@ export default function ContactHero() {
               draggable="false"
             />
           </span>
-          up <span className="text-[#3B66F6]">your</span>
+          Let’s Build the <span className="text-[#3B66F6]">Future</span>
           <br />
-          <span className="text-neutral-400">Trading</span>{" "}
-          <span className="text-neutral-900">and Profit.</span>
+          
+          <span className="text-neutral-900">of Trading Together.</span>
         </h1>
 
         {/* Subtext */}
         <p className="mt-4 max-w-xl mx-auto text-[14.5px] sm:text-[15px] text-neutral-600">
-          Stay up to date with the latest improvements, features,
+          Have a question, partnership idea, or need product support?
           <br className="hidden sm:block" />
-          and updates — all in one place.
+          Our team is here to help you automate smarter, trade faster, and grow stronger.
+ Reach out anytime because every great strategy begins with a conversation.
         </p>
 
         {/* CTA */}

@@ -17,7 +17,7 @@ export default function AboutHero() {
         {/* ===== Heading ===== */}
         <div className="mt-5 text-center">
           <h1 className="text-[40px] leading-[1.12] sm:text-6xl font-black  font-semibold tracking-tight text-neutral-900">
-            Power{" "}
+            Algorooms{" "}
             <span className="inline-flex items-center align-middle">
               <img
                 src={powerBlueIcon}
@@ -26,15 +26,15 @@ export default function AboutHero() {
                 draggable="false"
               />
             </span>
-            up <span className="text-[#3B66F6]">your</span>
+            Where <span className="text-[#3B66F6]">Innovation</span>
             <br />
-            Trading and Profit.
+            Trades Smart
           </h1>
 
           {/* Subtext */}
           <p className="mt-4 max-w-xl mx-auto text-[15px] text-neutral-600">
-            Stay up to date with the latest improvements, features,
-            and updates — all in one place.
+            Your trading deserves more than guesswork it needs precision, speed, and control.
+ We build intelligent tools that simplify algorithmic trading for everyone from beginners to <professionals className="br">Empowering you to design, test, and automate strategies that perform, every single time.</professionals>
           </p>
 
           {/* CTA */}

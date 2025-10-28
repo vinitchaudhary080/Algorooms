@@ -10,11 +10,11 @@ import img3 from "../../assets/blog/blog-3.png";
 const POSTS = [
   {
     id: 1,
-    href: "/blog/automation-workflows",
+    href: "/blog/What-is-algo-trading",
     category: "Growth",
-    title: "5 Automation Workflows to Boost Team Productivity",
+    title: "What Is Algo Trading Software and Why It Matters",
     excerpt:
-      "Explore five automation workflows that reduce repetitive tasks and help your team focus on meaningful work.",
+      "In today’s fast-moving financial markets, every second counts. Traditional manual trading is slowly being replaced by something faster, smarter, and far more efficient ",
     image: img1,
     author: "Daniel Lee",
     role: "Workflow Strategist",
@@ -22,25 +22,25 @@ const POSTS = [
   },
   {
     id: 2,
-    href: "/blog/ai-support-response",
-    category: "Analytics",
-    title: "How AI Can Improve Customer Support Response Times",
+    href: "/blog/How-algorithmic-trading",
+    category: "Algorithmic Trading",
+    title: "How Algorithmic Trading Software is Changing Investing in 2025",
     image: img2,
     date: "Jan 8, 2025",
   },
   {
     id: 3,
-    href: "/blog/metrics-that-matter",
-    category: "Productivity",
-    title: "Metrics That Matter: Tracking SaaS Growth the Right Way",
+    href: "/blog/Building-wealth",
+    category: "Building Wealth",
+    title: "Building Wealth with an Algo Trading Platform: The Modern Approach",
     image: img3,
     date: "Jan 7, 2025",
   },
   {
     id: 4,
-    href: "/blog/data-driven-culture",
-    category: "Technology",
-    title: "Building a Data-Driven Culture in Your Team",
+    href: "/blog/Trading-bots",
+    category: "Automation",
+    title: "Trading Bots Explained: Automation in Action",
     image: img3,
     date: "Jan 6, 2025",
   },
@@ -64,7 +64,7 @@ export default function BlogListing() {
   const cards = POSTS.slice(1, 4);
 
   return (
-    <section id="blog" className="bg-transparent py-20 mb-0 sm:py-28 scroll-mt-nav">
+    <section id="blog" className="bg-transparent pyt-0 pb-20 mb-0 sm:pt-0 sm:pb-28 scroll-mt-nav">
       <div className="container-xxl">
        
         

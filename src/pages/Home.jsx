@@ -21,65 +21,68 @@ import FAQ from "@/sections/FAQ";
 import Footer from "@/sections/Footer";
 
 export default function Home() {
+  // ✅ SEO schema for Algorooms
   const pageLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Cryptomaty",
+    name: "Algorooms",
     applicationCategory: "FinanceApplication",
     operatingSystem: "Web",
-    url: "https://cryptomaty.app/",
+    url: "https://algorooms.com/",
     description:
-      "Cryptomaty is a smart crypto trading platform where you can build, backtest, and deploy strategies with ease.",
+      "Algorooms is an advanced options analytics and algo-trading platform for retail traders — backtest, deploy, and monitor your strategies in one dashboard.",
   };
 
   return (
     <>
+      {/* ✅ SEO Meta */}
       <SEO
-        title="Cryptomaty – Your Smart Crypto Dashboard"
-        description="Build, backtest and deploy smarter crypto trading strategies with Cryptomaty."
-        canonical="https://cryptomaty.app/"
+        title="Algorooms – Trade Smarter with Automated Options Strategies"
+        description="Algorooms helps retail traders build, backtest and deploy algorithmic strategies with real-time options analytics — all in one seamless dashboard."
+        canonical="https://algorooms.com/"
         image="/og-home.jpg"
         jsonLd={pageLd}
       />
+
+      {/* Navbar */}
       <Navbar />
-      {/* Hero - light zoom/fade */}
+
+      {/* Hero Section */}
       <Reveal effect="zoom" duration={200}>
         <Hero />
       </Reveal>
 
-  
-
-    
-      {/* Feature blocks - layered stagger */}
+      {/* Product Features + Core Modules */}
       <Reveal effect="fade-up"><Features /></Reveal>
       <Reveal effect="fade-up" delay={100}><Strategies /></Reveal>
       <Reveal effect="fade-up" delay={150}><Charts /></Reveal>
 
-      {/* Listing + HowItWorks */}
+      {/* Explainers + Workflow Sections */}
       <Reveal effect="fade-up" delay={100}><HowItWorks /></Reveal>
       <Reveal effect="fade-up"><FeatureListing /></Reveal>
-     
 
-      {/* Why choose + Benefits */}
+      {/* Why Choose + Benefits */}
       <Reveal effect="fade-right"><WhyChoose /></Reveal>
       <Reveal effect="fade-left"><Benefits /></Reveal>
 
-      {/* Social proof */}
+      {/* Testimonials */}
       <Reveal effect="fade-up"><Testimonials /></Reveal>
       <Reveal effect="fade-up"><VideoTestimonials /></Reveal> 
 
+      {/* Pricing */}
       <Reveal effect="fade-up"><Pricing /></Reveal> 
-    
 
-      {/* Blog + FAQ */}
+      {/* Blog Section */}
       <section id="blogs" className="scroll-mt-nav">
         <Reveal effect="fade-up"><Blog /></Reveal>
       </section>
 
+      {/* FAQ Section */}
       <section id="faq" className="scroll-mt-nav">
         <Reveal effect="fade-up"><FAQ /></Reveal>
       </section>
 
+      {/* Footer */}
       <Footer />
     </>
   );

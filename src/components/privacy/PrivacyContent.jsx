@@ -91,7 +91,7 @@ export default function PrivacyContent() {
   ];
 
   return (
-    <section className="bg-white py-16 sm:py-24">
+    <section className=" pt-0 sm:pt-0 pb-16 sm:pb-24">
       <div className="container-xxl prose prose-neutral max-w-4xl">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900 mb-8">
           Privacy Policy

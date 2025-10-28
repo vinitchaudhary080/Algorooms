@@ -53,12 +53,12 @@ export default function Pricing() {
         {/* ========== Heading ========== */}
         <div className="text-center max-w-4xl mx-auto">
   <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs text-black font-semibold ring-2 ring-[#F6F6F9]">
-    <span className="h-1.5 w-1.5 rounded-full bg-[#3B66F6]" /> Pricing
+    <span className="h-1.5 w-1.5 rounded-full bg-[#3B66F6]" /> Choose Your Plan
   </span>
 
   <h2 className="mt-4 text-4xl sm:text-5xl font-semibold  leading-tight tracking-tight text-neutral-900">
-    Choose the plan that <br className="hidden sm:block" />
-    fits your team best.
+    Smart Options To Power <br className="hidden sm:block" />
+    Your Trading Journey.
   </h2>
 
   {/* Tabs (Monthly / Quarterly / Yearly) */}

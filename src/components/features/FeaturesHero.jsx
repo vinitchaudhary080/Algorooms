@@ -20,9 +20,9 @@ export default function FeaturesHero() {
           </h1>
 
           <p className="mt-3 text-[14.5px] sm:text-[15px] text-neutral-600">
-            Stay up to date with the latest improvements, features,
+            Execute trades directly from integrated charts with speed, reliability, and real-time market updates.
             <br className="hidden sm:block" />
-            and updates — all in one place.
+            Analyze trends, automate execution, and manage multiple segments effortlessly all from one unified platform.
           </p>
         </div>
       </div>

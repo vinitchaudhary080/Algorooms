@@ -41,11 +41,11 @@ export default function Testimonials() {
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto">
           <span className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs text-black font-semibold ring-2 ring-[#F6F6F9]">
-            Testimonials
+            User Stories
           </span>
           <h2 className="mt-4 text-4xl sm:text-5xl font-semibold  leading-tight tracking-tight text-neutral-900">
-            What our users love
-            <br /> about Algorooms.
+            What Our Users Love
+            <br /> About Algorooms.
           </h2>
         </div>
 

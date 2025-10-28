@@ -22,9 +22,9 @@ export default function CodeDetail() {
       </Reveal>
 
       {/* More from blog – slight fade-up */}
-      <Reveal effect="fade-up">
+      {/* <Reveal effect="fade-up">
         <Blog />
-      </Reveal>
+      </Reveal> */}
 
       <Footer />
     </>

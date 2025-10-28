@@ -40,7 +40,7 @@ export default function Hero() {
                 <span className="inline-flex items-center justify-center rounded-full bg-[#3B66F6] px-2 py-0.5 text-white">
                   Algorooms
                 </span>
-                <span className="text-neutral-600/90 font-medium">Smarter &amp; Faster</span>
+                <span className="text-neutral-600/90 font-medium">Aligned & Evolvingr</span>
               </span>
             </div>
 
@@ -53,15 +53,14 @@ export default function Hero() {
                 className="inline-block align-middle h-16 w-16 sm:h-24 sm:w-24 mx-1 translate-y-[-2px] drop-shadow-[0_10px_22px_rgba(59,102,246,.35)]"
                 draggable="false"
               />{" "}
-              up your
+              Up Your
               <br />
-              Trading and Profit.
+              Maximize Your Profits.
             </h1>
 
             {/* subtext */}
             <p className="mt-5 max-w-xl text-base sm:text-lg text-neutral-500">
-              Lorem ipsum dolor sit amet consectetur. Placerat quis mi sed volutpat.
-              Dui porttitor non molestie adipiscing.
+              Create strategies in minutes and test with confidence. Automate every trade for faster results. Capture opportunities instantly with real-time execution.
             </p>
 
             {/* CTAs */}
@@ -78,14 +77,14 @@ export default function Hero() {
                   hover:shadow-[0_14px_36px_rgba(40,100,223,0.45)]
                 "
               >
-                Get started <ChevronRight className="h-4 w-4" />
+                Let’s Begin <ChevronRight className="h-4 w-4" />
               </a>
 
               <a
                 href="#"
                 className="inline-flex items-center gap-2 text-[15px] font-semibold text-neutral-800 hover:opacity-80"
               >
-                Explore More <ChevronRight className="h-4 w-4" />
+                Find Out More <ChevronRight className="h-4 w-4" />
               </a>
             </div>
 

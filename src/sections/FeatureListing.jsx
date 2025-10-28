@@ -9,11 +9,11 @@ import imgEquityOptions from "@/assets/features/seamless.png";
 import imgPriceAction from "@/assets/features/templates.png";
 
 const items = [
-  { id: "tradingview", title: "Trade execution with Tradingview", subtitle: "Execute trades directly from integrated charting tools with one-click precision and zero lag.", image: imgTradingView },
-  { id: "cnc-btst", title: "CNC & BTST Trading", subtitle: "Manage typography and colors globally to keep every page consistent while trading confidently.", image: imgCncBtst },
-  { id: "potential", title: "Easy Potential Trading", subtitle: "Identify high-potential opportunities and minimize manual errors through smart automation.", image: imgPotential },
-  { id: "equity-options", title: "Equity, Options & Future Trading", subtitle: "Access all trading segments in one place — from equity delivery to complex futures and options.", image: imgEquityOptions },
-  { id: "price-action", title: "Price Actions Trading", subtitle: "Analyze real-time movements using advanced charts, P&L tracking, and AI-generated trade signals.", image: imgPriceAction },
+  { id: "tradingview", title: "Trade Execution with TradingView", subtitle: "Place and manage trades directly from integrated TradingView charts — ensuring precision with our real-time trading system.", image: imgTradingView },
+  { id: "cnc-btst", title: "CNC & BTST Trading", subtitle: "Execute positional and short-term trades effortlessly using order execution software and live performance tracking.", image: imgCncBtst },
+  { id: "potential", title: "Opportunity Scanner", subtitle: "Identify high-potential setups quickly through market analysis algorithms and rule-based automation — reducing manual effort.", image: imgPotential },
+  { id: "equity-options", title: "Equity, Options & Futures", subtitle: "Trade seamlessly across equity, options, and futures markets on a unified algo trading platform.", image: imgEquityOptions },
+  { id: "price-action", title: "Price Action Analysis", subtitle: "Understand market behaviour better with real-time charting, AI trading software, and transparent P&L insights.", image: imgPriceAction },
 ];
 
 export default function FeatureListing() {
@@ -64,13 +64,13 @@ export default function FeatureListing() {
           <div className="lg:col-span-1">
             <div className="max-w-lg">
               <h2 className="text-[34px] sm:text-5xl font-semibold  leading-tight tracking-tight text-neutral-900">
-                All-in-one dashboard
-                <br /> for your business.
+                All-in-One Platform
+                <br /> for Advanced Trading.
               </h2>
               {/* Mobile-only blurb */}
               <p className="mt-4 text-neutral-600 md:hidden">
-                Track performance, manage data, and integrate with your favorite tools — all
-                from a single, streamlined interface.
+                Measure performance, manage information, and connect tools seamlessly in one interface.
+
               </p>
             </div>
 
@@ -137,8 +137,8 @@ export default function FeatureListing() {
           {/* ---------- RIGHT: Desktop paragraph + Image ---------- */}
           <div className="lg:col-span-2 mt-10 md:mt-8 lg:mt-0">
             <p className="hidden md:block text-neutral-600 max-w-md ml-auto mb-6">
-              Track performance, manage data, and integrate with your favorite tools — all
-              from a single, streamlined interface.
+              Measure performance, manage information, and connect tools seamlessly in one interface.
+
             </p>
 
             <div className="relative rounded-[44px] overflow-hidden">

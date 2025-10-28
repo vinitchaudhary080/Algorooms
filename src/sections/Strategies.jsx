@@ -38,19 +38,18 @@ export default function Strategies() {
           </div>
 
           <h2 className="text-4xl sm:text-5xl font-semibold  tracking-tight leading-tight text-neutral-900">
-            Manage everything
-            <br /> in one place.
+            Manage Everything
+            <br /> In One Place.
           </h2>
 
           <p className="mt-4 text-neutral-600">
-            Keep projects, data, and communication together in a single, organized
-            dashboard — so decisions are faster and distractions are fewer.
+            Keep projects, data, and communication together in a single, organized workflow so decisions are faster and distractions are fewer with algo trading software, automated trading software, and algo trading platform.
           </p>
 
           <hr className="mt-8 mb-6 border-neutral-200/70" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4 text-[15px]">
-            {["Slack", "Notion", "Zapier", "Google Sheets"].map((item) => (
+            {["Create", "Backtest", "Optimize", "Deploy"].map((item) => (
               <div key={item} className="inline-flex items-center gap-3 text-neutral-700">
                 <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#3B66F6] shadow-sm ring-1 ring-black/5">
                   <svg

@@ -3,24 +3,24 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    q: "Is Algo trading profitable?",
-    a: "Yes, if your strategy is precise and disciplined. With the right plan, algorithms turn market moves into consistent profits.",
+    q: "Best automated trading software for beginners?",
+    a: "Choose software that’s simple, beginner-friendly, and offers pre-built strategies. Platforms like Algorooms are perfect for getting started quickly.",
   },
   {
-    q: "What is backtesting, and why is it important?",
-    a: "Backtesting tests your strategy on historical data before real money is at stake. It’s the key to filtering losing ideas and sharpening winners.",
+    q: "How to use algo trading platforms in India?",
+    a: "Sign up, connect your broker, design or import strategies, backtest, and deploy live trades with real-time updates.",
   },
   {
-    q: "What kind of crypto strategies can I automate?",
-    a: "Trend-following, arbitrage, grid, and mean-reversion strategies thrive when automated. Automation removes emotion and executes trades with precision.",
+    q: "Affordable algorithmic trading software?",
+    a: "Look for platforms with essential automation, backtesting, and real-time features at low or flexible subscription plans.",
   },
   {
-    q: "Do I need a broker to start algo trading?",
-    a: "Absolutely, an API-enabled broker or exchange is essential. Without it, your algorithm can’t place trades or seize opportunities.",
+    q: "Top trading bots for the stock market?",
+    a: "Bots that automate strategies, monitor trends, and execute orders efficiently across multiple assets are the most effective.",
   },
   {
-    q: "Can beginners use algo trading, or is it only for experts?",
-    a: "Yes, beginners can start with simple bots or basic scripts. Mastery grows with learning, testing, and gradual strategy upgrades.",
+    q: "No-code trading strategy builder?",
+    a: "Allows you to create and automate strategies visually without coding — ideal for beginners and non-technical traders.",
   },
 ];
 
@@ -39,22 +39,22 @@ export default function FAQ() {
           </span>
 
           <h2 className="mt-4 text-4xl sm:text-5xl font-semibold  leading-tight tracking-tight text-neutral-900">
-            Got questions?
+            Got Questions?
             <br />
-            We’ve got answers.
+            We’ve Got Answers.
           </h2>
 
           <p className="mt-4 text-neutral-600 max-w-sm">
-            Here’s everything you need to know before getting started.
+            Everything you need to know before you get started quick, clear, and easy to follow.
           </p>
 
           {/* helper card at bottom left */}
           <div className="mt-10 rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] ring-5 ring-[#F6F6F9] p-5 max-w-sm self-end">
             <div className="text-[15px] font-semibold text-neutral-900">
-              Still have questions?
+              Still curious?
             </div>
             <p className="mt-1 text-sm text-neutral-500">
-              Contact us and we’ll help you out.
+              Reach out and we’ll guide you every step of the way.
             </p>
 
            <a
@@ -75,7 +75,7 @@ export default function FAQ() {
     hover:scale-[1.02]
   "
 >
-  Chat us →
+  Chat with Us →
 </a>
 
           </div>

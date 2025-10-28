@@ -21,20 +21,19 @@ export default function Footer() {
                 className="h-16 w-16 sm:h-24 sm:w-24 align-middle drop-shadow-[0_6px_16px_rgba(59,102,246,0.35)]"
                 draggable="false"
               />
-              <span className="text-[#3B66F6]">power</span>
+              <span className="text-[#3B66F6]">Power</span>
             </span>
           </h2>
 
           <h2 className="text-[36px] sm:text-[48px] md:text-[56px] font-black font-semibold leading-[1.15] tracking-tight text-neutral-900 text-center">
-            for your Trading potential
+             for your Trading Potential
           </h2>
         </div>
 
         {/* Subtitle */}
         <p className="mt-4 max-w-2xl mx-auto text-[15px] text-neutral-600">
-          Simplify your workflow, integrate faster, and
-          <br className="hidden sm:block" />
-          launch with confidence.
+          Simplify your strategy, automate trades, and execute with confidence.
+          
         </p>
 
         {/* Button */}
@@ -72,7 +71,7 @@ export default function Footer() {
               </Link>
 
               <p className="mt-3 text-sm text-neutral-600 max-w-xs leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur.
+                 Simplifying trading with smart strategies and seamless automation.
               </p>
 
               <div className="mt-4 flex items-center gap-3">
@@ -148,9 +147,8 @@ export default function Footer() {
                 </h3>
                 <ul className="space-y-2 text-neutral-600">
                   <li>
-                    <Link to="/contact" className="hover:text-neutral-900">
-                      Contact
-                    </Link>
+                    <Link to="/faq" className="hover:text-neutral-900">FAQ</Link>
+
                   </li>
                   <li>
                     <Link to="/privacy" className="hover:text-neutral-900">

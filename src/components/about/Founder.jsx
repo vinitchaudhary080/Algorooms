@@ -28,32 +28,22 @@ export default function Founder() {
 
               {/* Heading */}
               <h2 className="mt-3 text-2xl sm:text-[26px] font-semibold leading-snug text-neutral-900">
-                Lorem ipsum dolor sit amet consectetur.
+                A Note from the Founder
               </h2>
 
               {/* Paragraphs */}
               <p className="mt-3 text-[14px] leading-relaxed text-neutral-600">
-                Lorem ipsum dolor sit amet consectetur. Nibh lobortis mi aliquet
-                volutpat eu sit molestie enim sed. Tristique lectus donec amet ut
-                dictum ante est fermentum. Morbi nulla donec varius justo dolor
-                pretium auctor. Etiam tincidunt consequat sit at eleifend.
-                Venenatis metus in id nunc vitae. Id urna sollicitudin quisque
-                ultricies convallis nulla ultricies in.
+                When we started Algorooms, our goal was simple: make trading easier, faster, and smarter for everyone. No confusion. No extra steps. Just clear tools and insights so you can trade confidently.
               </p>
 
               <p className="mt-4 text-[14px] leading-relaxed text-neutral-600">
-                Lorem ipsum dolor sit amet consectetur. Nibh lobortis mi aliquet
-                volutpat eu sit molestie enim sed. Tristique lectus donec amet ut
-                dictum ante est fermentum. Morbi nulla donec varius justo dolor
-                pretium auctor.
+                But Algorooms is more than just a platform it’s a community of thinkers, doers, and game-changers. A place where ideas spark, challenges turn into opportunities, and every voice matters. Your trust and support are what keep this vision alive.
               </p>
 
               {/* Quote block */}
               <blockquote className="mt-6 sm:mt-52 rounded-xl bg-white/70 p-4 sm:p-5 ring-1 ring-neutral-200">
                 <p className="text-[15px] sm:text-[16px] font-semibold text-neutral-900">
-                  “Lorem ipsum dolor sit amet consectetur. Nibh lobortis mi
-                  aliquet volutpat eu sit molestie enim sed. Tristique lectus
-                  donec amet ut dictum ante est fermentum.”
+                  “We’re constantly evolving building new features, listening to your feedback, and making sure Algorooms grows with the needs of traders like you. The journey has just begun, and the best part? We’re in it together, aiming higher, trading smarter, and winning bigger.”
                 </p>
               </blockquote>
             </div>

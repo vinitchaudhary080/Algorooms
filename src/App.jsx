@@ -14,6 +14,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 import StratCrypto from "@/pages/blog/StratCrypto";
 import Cryptocurrency from "@/pages/blog/Cryptocurrency";
 import Blockchain from "@/pages/blog/Blockchain";
+import FAQFullPage from "./pages/FAQFull";
+
 
 export default function App() {
   return (
@@ -29,10 +31,11 @@ export default function App() {
         <Route path="/pricing" element={<PricingPage />} />
        <Route path="/terms" element={<Terms />} />
        <Route path="/privacy" element={<Privacy />} />
-      <Route path="/blog/automation-workflows" element={<CodeDetail />} />
-      <Route path="/blog/how-to-start-crypto-trading" element={<StratCrypto />} />
-      <Route path="/blog/cryptocurrency-digital-revolution" element={<Cryptocurrency />}/>
-      <Route path="/blog/blockchain-force-transforming" element={<Blockchain />}/>
+      <Route path="/blog/What-is-algo-trading" element={<CodeDetail />} />
+      <Route path="/blog/How-algorithmic-trading" element={<StratCrypto />} />
+      <Route path="/blog/Building-wealth" element={<Cryptocurrency />}/>
+      <Route path="/blog/Trading-bots" element={<Blockchain />}/>
+      <Route path="/faq" element={<FAQFullPage />} />
        
     </Routes>
     </>

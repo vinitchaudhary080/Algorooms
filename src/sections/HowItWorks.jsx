@@ -41,18 +41,18 @@ export default function HowItWorks() {
         <div className="text-center max-w-3xl mx-auto">
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs text-black font-semibold ring-2 ring-[#F6F6F9]">
             <span className="h-2.5 w-2.5 rounded-full bg-[#3B66F6]" />
-            How it works
+            Simplify Your Automation
           </span>
 
           <h2 className="mt-5 text-4xl sm:text-5xl font-semibold leading-tight tracking-tight text-neutral-900">
-            Turn complex workflows
+            Turn Complex Workflows
             <br className="hidden sm:block" />
-            into simple steps.
+            into Simple Steps.
           </h2>
 
           <p className="mt-4 text-[15px] sm:text-base text-neutral-500">
-            Three simple steps to connect your data, automate tasks,
-            <br className="hidden sm:block" /> and track progress.
+            Three straightforward steps to connect your data, automate trades, and track performance with your algo trading platform.
+            
           </p>
         </div>
 
@@ -60,24 +60,24 @@ export default function HowItWorks() {
         <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           <StepCard
             step={1}
-            title="Create Strategy"
-            desc="Integrate your favorite tools and import data in minutes — no coding or heavy setup needed."
+            title="Build Your Strategy"
+            desc="Integrate your data and create strategies in minutes no coding or heavy setup needed with our algo strategy builder."
             img={stepImg1}
             alt="Create Strategy bar chart"
           />
 
           <StepCard
             step={2}
-            title="Backtest Strategy"
-            desc="Set up smart triggers and recurring tasks so your team can focus on what matters most."
+            title="Backtest & Optimize"
+            desc=" Test your strategies with smart triggers and recurring automation, so you can focus on refining what works best with backtesting tools."
             img={stepImg2}
             alt="Backtest Strategy waveform"
           />
 
           <StepCard
             step={3}
-            title="Deployed Strategy"
-            desc="Monitor performance in real-time and optimize your workflow with clear, actionable insights."
+            title="Deploy & Monitor"
+            desc="Deploy your strategies live, track real-time performance, and optimize workflow with actionable insights from our real-time trading system."
             img={stepImg3}
             alt="Deployed Strategy gauge"
           />

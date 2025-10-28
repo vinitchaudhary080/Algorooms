@@ -2,124 +2,99 @@
 import React from "react";
 import { Facebook, Twitter, Linkedin, Link as LinkIcon } from "lucide-react";
 
-// (optional) author avatar agar baad me dikhana ho
-// import authorAvatar from "@/assets/avatars/john.png";
-
 export default function CodeDetailContent() {
   return (
     <section className="bg-white pt-10 pb-16 sm:pt-12 sm:pb-20">
       <div className="container-xxl">
         <article className="mx-auto max-w-3xl text-[15px] leading-7 text-neutral-700">
+
           {/* Intro */}
           <p className="text-neutral-700">
-            Not long ago, money meant coins, notes, and bank accounts. But today, the definition of money is expanding. From Bitcoin to Ethereum, cryptocurrency is no longer just a buzzword – it’s a global movement redefining how we think about value, transactions, and investments. For stock market investors, understanding crypto is no longer optional; it’s essential to stay ahead in a world where finance and technology are merging.
+            Investors used to rely on instincts, news headlines, and slow decision making. Markets have moved far beyond that. Automation is now the edge. It executes trades in milliseconds, evaluates opportunities nonstop, and removes hesitation that destroys performance.
           </p>
 
-          {/* What is Crypto */}
+          {/* Section 1 */}
           <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
-            What Exactly is Cryptocurrency?
+            From Manual Trading to Machine Intelligence
           </h2>
           <p className="mt-2">
-            At its core, cryptocurrency is a form of digital money built on blockchain technology. Unlike traditional currencies issued by governments, cryptocurrencies are decentralized – meaning no central bank or authority controls them.
+            Humans cannot compete with the speed of data analysis required in modern markets. Automated trading software executes trades based on rules and market conditions, not emotions. It identifies opportunities at the exact moment they exist and acts instantly.
           </p>
           <p className="mt-2">
-            Each transaction is recorded on a blockchain, making it transparent, secure, and nearly impossible to manipulate. Think of it as money that exists purely in digital form, powered by mathematics and trust in technology rather than trust in a government.
+            Staying competitive now means leveraging machines built to react faster than human reflexes.
           </p>
 
-          {/* Why should investors care */}
+          {/* Section 2 */}
           <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
-            Why Should Investors Pay Attention?
+            The Power of Automation in Wealth Building
           </h2>
           <p className="mt-2">
-            Cryptocurrency is not just a passing trend; it is a new asset class. Much like stocks, bonds, or real estate, crypto provides investors with another opportunity to grow wealth – but with its own unique dynamics. Here’s why it matters:
+            A well-defined strategy only matters if it is executed consistently. Automation removes randomness from behavior and turns every decision into a system. It manages entries, exits, and risk precisely the way the trader intended.
           </p>
-          <ul className="mt-3 list-disc pl-5 space-y-1.5">
-            <li>
-              <span className="font-semibold">Global Accessibility –</span> Anyone with internet access can own and trade crypto, no matter where they are.
-            </li>
-            <li>
-              <span className="font-semibold">High Growth Potential –</span> Early adopters of Bitcoin saw it grow from a few cents to thousands of dollars per coin.
-            </li>
-            <li>
-              <span className="font-semibold">Diversification –</span> Cryptocurrencies provide a way to spread investments beyond traditional markets.
-            </li>
-          </ul>
+          <blockquote className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-5 text-neutral-800">
+            Strategy means nothing without discipline. Automation enforces discipline.
+          </blockquote>
+
+          {/* Section 3 */}
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
+            A Smarter Way to Diversify
+          </h2>
           <p className="mt-2">
-            Of course, with high rewards come high risks – crypto is famously volatile. But that’s exactly why investors are curious: the potential upside is too big to ignore.
+            Serious wealth is built over portfolios, not lucky trades. Multi-asset algo platforms let traders operate in equities, commodities, and currencies from one dashboard. Multiple income streams, controlled risk, stronger long-term growth.
           </p>
 
-          {/* Connection to stock market folks */}
+          {/* Section 4: AI */}
           <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
-            How Cryptocurrency Connects with Stock Market Enthusiasts
+            Intelligence That Works for You
           </h2>
           <p className="mt-2">
-            If you enjoy following equities, crypto might feel like the next chapter in your investing journey. Many of the instincts you’ve built around analyzing markets, spotting trends, and managing risk can carry over here too.
+            AI trading software recognizes patterns that humans overlook. It learns from market behavior, adapts strategies, and suggests actions that rely on logic instead of fear or greed.
           </p>
-          <ul className="mt-3 list-disc pl-5 space-y-1.5">
-            <li>
-              <span className="font-semibold">Always Active –</span> Crypto markets run all the time, offering investors flexibility to engage when they choose.
-            </li>
-            <li>
-              <span className="font-semibold">Quick Turnarounds –</span> Transactions settle within minutes, giving a sense of immediacy that many traders appreciate.
-            </li>
-            <li>
-              <span className="font-semibold">Truly Global –</span> A single crypto asset is traded across borders, creating a unified market of participants.
-            </li>
-            <li>
-              <span className="font-semibold">Expanding Horizons –</span> From corporations to financial institutions, more established players are exploring crypto, signaling its growing relevance.
-            </li>
-          </ul>
-
-          {/* Use cases */}
-          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
-            Real-World Use Cases
-          </h2>
-          <p className="mt-2">Cryptocurrency is more than just an investment tool. Around the world, it’s being used for:</p>
-          <ul className="mt-3 list-disc pl-5 space-y-1.5">
-            <li>Cross-border payments – Faster and cheaper than traditional banking.</li>
-            <li>Smart contracts – Automated agreements on platforms like Ethereum.</li>
-            <li>Digital ownership – Through NFTs, individuals can own unique digital assets.</li>
-          </ul>
           <p className="mt-2">
-            India too has seen rising interest, with exchanges and apps enabling millions of young investors to participate in crypto trading.
+            This is not trading. This is smart investing with a learning engine.
           </p>
 
-          {/* What it means for you */}
+          {/* Section 5: Backtesting */}
           <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
-            What Does This Mean for You as an Investor?
+            Backtesting and Precision
           </h2>
           <p className="mt-2">
-            If you’re in the stock market, you already understand risk and reward. Cryptocurrency amplifies both. For retail investors, the key benefits are:
+            Before risking money, traders simulate strategies on historical data to find weaknesses and optimize returns. Combined with real-time execution, every move gains purpose: precise, verified, and timed perfectly.
           </p>
-          <ul className="mt-3 list-disc pl-5 space-y-1.5">
-            <li>
-              <span className="font-semibold">Accessibility –</span> Start small; you don’t need lakhs to invest.
-            </li>
-            <li>
-              <span className="font-semibold">Innovation exposure –</span> Be part of a technology-driven future.
-            </li>
-            <li>
-              <span className="font-semibold">Portfolio growth –</span> A chance to diversify into digital assets.
-            </li>
-          </ul>
-          <figure className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-5">
-            <blockquote className="text-neutral-800">
-              <span className="font-semibold">Note:</span> Risks include market volatility, regulatory uncertainty, and security concerns. The golden rule is simple — invest only what you can afford to lose.
-            </blockquote>
-          </figure>
 
-          {/* Bigger picture */}
+          {/* Section 6: India adoption */}
           <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
-            The Bigger Picture
+            Why India Is Adopting Fast
           </h2>
           <p className="mt-2">
-            Cryptocurrency is not here to replace stocks or traditional assets; it’s here to co-exist and expand financial possibilities. For investors, it represents freedom, speed, and global participation.
+            Access to algo trading software in India has expanded rapidly. With competitive brokers, better APIs, and rising trader awareness, automation is no longer a privilege for institutions.
           </p>
-          <figure className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-5">
-            <blockquote className="text-neutral-800">
-              As Warren Buffet rightly said, “Opportunities come infrequently. When it rains gold, put out the bucket, not the thimble.” Cryptocurrency could be one of those opportunities – but only for those willing to understand it, respect its risks, and embrace its potential.
-            </blockquote>
-          </figure>
+          <p className="mt-2">
+            Retail investors are scaling smarter than ever before.
+          </p>
+
+          {/* Section 7: No-code */}
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
+            A No-Code Future for Every Trader
+          </h2>
+          <p className="mt-2">
+            Now anyone can deploy algorithms without programming skills. No-code strategy builders let traders design logic visually and let automation handle execution.
+          </p>
+          <p className="mt-2">
+            More participation. More opportunity. Less complexity.
+          </p>
+
+          {/* Section 8: Closing */}
+          <h2 className="mt-8 text-[18px] font-semibold text-neutral-900">
+            The Modern Path to Financial Growth
+          </h2>
+          <p className="mt-2">
+            Wealth grows when strategy meets execution. Automation ensures execution is never late, never inconsistent, never emotional.
+          </p>
+          <p className="mt-2">
+            The future belongs to traders who use automation as leverage. Not more trades. Smarter trades.
+          </p>
+
         </article>
       </div>
     </section>

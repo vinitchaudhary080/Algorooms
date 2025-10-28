@@ -12,24 +12,23 @@ export default function Charts() {
           {/* badges row */}
           <div className="inline-flex items-center gap-2 mb-6 rounded-full bg-white px-2 py-1 ring-2 ring-[#F6F6F9]">
             <span className="inline-flex items-center rounded-full bg-[#3B66F6] text-white px-3 py-1 text-xs font-semibold">
-              Report
+              Streamline
             </span>
             <span className="inline-flex items-center rounded-full text-neutral-800 px-3 py-1 text-xs font-semibold">
-              Workflow efficiency
+              Automation
             </span>
           </div>
 
 
           {/* heading */}
           <h2 className="text-4xl sm:text-5xl font-semibold  tracking-tight leading-tight text-neutral-900">
-            Automate tasks.
-            <br /> Focus on growth.
+            Maximize Strategy
+            <br /> Performance
           </h2>
 
           {/* subtext */}
           <p className="mt-5 text-neutral-600 max-w-md leading-relaxed">
-            Eliminate repetitive work with powerful automations, so your team can stay
-            focused on building and scaling your product.
+            Eliminate repetitive work with powerful automated trading software and algo trading platform features, so you can stay focused on building, testing, and scaling strategies.
           </p>
 
           {/* CTA */}

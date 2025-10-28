@@ -15,11 +15,11 @@ export default function Features() {
         {/* ================== Section Heading ================== */}
         <div className="text-center max-w-3xl mx-auto mb-5">
           <h2 className="text-4xl sm:text-5xl font-semibold  leading-tight text-neutral-900 tracking-tight">
-            <span className="block">Stop switching tools.</span>
+            <span className="block">Stop Switching Tools.</span>
 
             <span className="mt-1.5 block">
               <span className="inline-flex flex-wrap items-center justify-center gap-2 whitespace-normal">
-                <span>Start driving</span>
+                <span>Start Compounding</span>
                 <span className="inline-flex items-center">
                   <img
                     src={growthIcon}
@@ -32,7 +32,7 @@ export default function Features() {
                     "
                     draggable="false"
                   />
-                  <span className="text-[#3B66F6]">growth.</span>
+                  <span className="text-[#3B66F6]">Growth.</span>
                 </span>
               </span>
             </span>
@@ -63,10 +63,10 @@ export default function Features() {
             </div>
 
             <h3 className="mt-8 text-xl font-semibold text-neutral-900">
-              Strategy Templates
+              RA-Based Strategy Templates
             </h3>
             <p className="mt-3 text-sm text-neutral-500 max-w-sm mx-auto leading-relaxed">
-              Get every metric in one dashboard — no more spreadsheets or missed signals.
+              Design, test, and refine trading models instantly with no-code strategy builder templates  simplifying algorithm creation without complex coding.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function Features() {
               Seamless Collaboration
             </h3>
             <p className="mt-3 text-sm text-neutral-500 max-w-sm mx-auto leading-relaxed">
-              Real-time updates keep your whole team on the same page, across every project.
+              Coordinate, communicate, and execute without delays. Real-time tracking and team sync make collaboration seamless across every trading strategy on our algo trading platform.
             </p>
           </div>
 
@@ -121,10 +121,11 @@ export default function Features() {
             </div>
 
             <h3 className="mt-8 text-xl font-semibold text-neutral-900">
-              Deployed Strategy
+              From Idea to Execution
             </h3>
             <p className="mt-3 text-sm text-neutral-500 max-w-sm mx-auto leading-relaxed">
-              Cut manual work with built-in alerts, reporting, and task automation.
+              Turn your strategies into action  create, test, and automate every trade with intelligent backtesting and real-time deployment.
+
             </p>
           </div>
 

@@ -8,6 +8,7 @@ const navItems = [
   { label: "Home", to: "/", type: "route" },
   { label: "About", to: "/about", type: "route" },
   { label: "What’s New", to: "/features", type: "route" },
+  { label: "Blogs", to: "/blog", type: "route" }, 
   { label: "Pricing", to: "/pricing", type: "route" },
 ];
 
