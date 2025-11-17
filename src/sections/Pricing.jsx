@@ -14,19 +14,129 @@ const PRICES = {
   yearly: { starter: 0, pro: 58, business: 34 },
 };
 
-// Features placeholder (you can later replace with trading specific ones)
+// ✅ FEATURES - mapped from your comparison table
+// Features
+// Free / Unlimited / Limited
+// Backtest Credits: 50 / 1500 / 500
+// Strategy Creation: 5 / 50 / 25
+// Live & Forward Deployment: x / 20 / 5
+// Allowed Brokers: x / Any 5 / Any 3
+// Index Futures / Options / Equity etc: x / Yes / Yes
+// Portfolio Backtesting: x / 10 strategies / 2 strategies
 const FEATURES = [
-  { label: "Core layout sections", starter: true, pro: true, business: true },
-  { label: "Mobile friendly design", starter: true, pro: true, business: true },
-  { label: "Light and dark mode", starter: true, pro: true, business: true },
-  { label: "Smooth basic animations", starter: true, pro: true, business: true },
-  { label: "CMS and blog support", starter: false, pro: true, business: true },
-  { label: "Commercial use rights", starter: false, pro: true, business: true },
-  { label: "Built in blog layouts", starter: false, pro: true, business: true },
-  { label: "SEO optimized pages", starter: false, pro: true, business: true },
-  { label: "Smart navigation system", starter: false, pro: true, business: true },
-  { label: "Priority support", starter: false, pro: false, business: true },
-  { label: "Lifetime access", starter: false, pro: true, business: true },
+  // Backtest Credits
+  {
+    label: "Backtest credits - 50 per month",
+    starter: true,
+    pro: false,
+    business: false,
+  },
+  {
+    label: "Backtest credits - 1500 per month",
+    starter: false,
+    pro: true,
+    business: false,
+  },
+  {
+    label: "Backtest credits - 500 per month",
+    starter: false,
+    pro: false,
+    business: true,
+  },
+
+  // Strategy Creation
+  {
+    label: "Strategy creation - up to 5 strategies",
+    starter: true,
+    pro: false,
+    business: false,
+  },
+  {
+    label: "Strategy creation - up to 50 strategies",
+    starter: false,
+    pro: true,
+    business: false,
+  },
+  {
+    label: "Strategy creation - up to 25 strategies",
+    starter: false,
+    pro: false,
+    business: true,
+  },
+
+  // Live & Forward Deployment
+  {
+    label: "Live and forward deployment - up to 20 strategies",
+    starter: false,
+    pro: true,
+    business: false,
+  },
+  {
+    label: "Live and forward deployment - up to 5 strategies",
+    starter: false,
+    pro: false,
+    business: true,
+  },
+
+  // Allowed Brokers
+  {
+    label: "Allowed brokers - any 5 brokers",
+    starter: false,
+    pro: true,
+    business: false,
+  },
+  {
+    label: "Allowed brokers - any 3 brokers",
+    starter: false,
+    pro: false,
+    business: true,
+  },
+
+  // Market coverage (Yes/No rows)
+  {
+    label: "Index futures enabled",
+    starter: false,
+    pro: true,
+    business: true,
+  },
+  {
+    label: "Index options enabled",
+    starter: false,
+    pro: true,
+    business: true,
+  },
+  {
+    label: "Equity (cash) trading enabled",
+    starter: false,
+    pro: true,
+    business: true,
+  },
+  {
+    label: "Equity options trading enabled",
+    starter: false,
+    pro: true,
+    business: true,
+  },
+  {
+    label: "Equity futures trading enabled",
+    starter: false,
+    pro: true,
+    business: true,
+  },
+
+  // Portfolio Backtesting
+  {
+    label: "Portfolio backtesting - up to 10 strategies",
+    starter: false,
+    pro: true,
+    business: false,
+  },
+  {
+    label: "Portfolio backtesting - up to 2 strategies",
+    starter: false,
+    pro: false,
+    business: true,
+  },
 ];
 
 export default function Pricing() {
