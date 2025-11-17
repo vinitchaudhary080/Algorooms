@@ -2,10 +2,13 @@
 import React from "react";
 import FAQ from "../sections/FAQFull"; // import the section version
 import ScrollToTop from "../components/ScrollToTop";
+import Navbar from "@/components/Navbar";
+import Footer from "@/sections/Footer";
 
 export default function FAQFullPage() {
   return (
     <>
+     <Navbar />
       <ScrollToTop />
 
       <div className="pt-24 sm:pt-28">
@@ -20,6 +23,8 @@ export default function FAQFullPage() {
 
         <FAQ />
       </div>
+
+      <Footer />
     </>
   );
 }
