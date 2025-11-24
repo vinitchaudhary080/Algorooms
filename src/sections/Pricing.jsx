@@ -259,7 +259,7 @@ function PlanCard({
         <div className="text-[15px] font-semibold text-neutral-900">{title}</div>
         {featured && (
           <span className="inline-flex items-center rounded-full bg-[#3B66F6] text-white text-[10px] font-semibold px-2.5 py-1 shadow">
-            Recommended
+            Most Popular
           </span>
         )}
       </div>
